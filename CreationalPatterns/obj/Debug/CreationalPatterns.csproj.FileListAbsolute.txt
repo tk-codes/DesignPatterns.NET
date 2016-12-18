@@ -1,1 +1,0 @@
-D:\Dev\vs workspace\DesignPatterns\CreationalPatterns\bin\Debug\CreationalPatterns.exe.config
