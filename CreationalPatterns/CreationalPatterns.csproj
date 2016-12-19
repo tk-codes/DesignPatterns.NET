@@ -45,9 +45,11 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Singleton\ChocolateBoiler.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Singleton\Singleton.cd" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="AbstractFactory\" />
