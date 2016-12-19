@@ -5,10 +5,9 @@ Design Patterns in C# / .NET
 
 ## Creational Patterns
 
-Name | Description
---- | ---
-Abstract Factory | Provide an interface for creating families of related or dependent objects without specifying their concrete classes.
-Builder | Separate the construction of a complex object from its representation, allowing the same construction process to create various representations.
+1. Abstract Factory
+2. Builder
+3. [Singleton](/CreationalPatterns/Singleton/)
 
 ## Structural Patterns
 
