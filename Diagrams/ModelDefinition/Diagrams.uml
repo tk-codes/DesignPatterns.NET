@@ -17,16 +17,6 @@
         name="StandardProfileL3" />
     </packageHasProfileInstances>
   </profileInstances>
-  <packagedElements>
-    <packageHasNamedElement>
-      <class
-        Id="fdb082b3-d8a3-4974-81f6-f50135906dc9"
-        name="Class1"
-        isAbstract="false"
-        isLeaf="false"
-        isActiveClass="false" />
-    </packageHasNamedElement>
-  </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"
     name="Integer"

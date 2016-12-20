@@ -1,3 +1,3 @@
 # Singleton
 
-![ChocolateBoiler as Singleton](/CreationalPatterns/Singleton/Singleton.png)
+![ChocolateBoiler as Singleton](/CreationalPatterns/doc/Singleton.png)
