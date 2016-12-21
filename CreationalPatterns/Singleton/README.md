@@ -38,5 +38,40 @@ Because the **Singleton** instance is referenced by a private static member vari
 * you want to keep separate threads from creating new instances of the singleton at the same time (thread-safe)
 * you want to create an instance only when the instance is needed.
 
+[ChocolateBoiler_ThreadSafe.cs](/CreationalPatterns/Singleton/ChocolateBoiler_ThreadSafe.cs).
+```cs
+    public sealed class ChocolateBuilder_ThreadSafe
+    {       
+        // singleton instance
+        // the volatile keyword ensures that multiple threads handle the singleton instance variable correctly
+        private static volatile ChocolateBuilder_ThreadSafe instance;
+        private static object syncLock = new object();
+
+        public static ChocolateBuilder_ThreadSafe Instance
+        {
+            get
+            {
+                // Check for an instance and if there isn't one, enter a locked block
+                if (instance == null)
+                {
+                    lock (syncLock)
+                    {
+                        // Once in the block, check again and if still null
+                        if(instance == null)
+                        {
+                            instance = new ChocolateBuilder_ThreadSafe();
+                        }                 
+                    }  
+                }
+                return instance;
+            }
+        }
+     }
+```
+The singleton instance is declared to be **volatile** to ensure that assignment to the instance variable completes before the instance variable can be accessed.
+Lastly, this approach uses a **syncRoot** instance to lock on, rather than locking on the type itself, to avoid deadlocks.
+
+This double-checked locking approach solves the thread concurrency problems while avoiding an exclusive lock in every call to the instance propery method. It also allows you to delay instantiation until the object is first accessed.
+
 Reference: 
 * MSDN - [Implementing Singleton in C#](https://msdn.microsoft.com/en-us/library/ff650316.aspx)
