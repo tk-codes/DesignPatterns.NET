@@ -12,6 +12,7 @@ namespace CreationalPatterns.Singleton
         public bool Boiled { get; set; }
 
         // singleton instance
+        // the volatile keyword ensures that multiple threads handle the singleton instance variable correctly
         private static volatile ChocolateBuilder_ThreadSafe instance;
         private static object syncLock = new object();
 
@@ -25,10 +26,12 @@ namespace CreationalPatterns.Singleton
         {
             get
             {
+                // Check for an instance and if there isn't one, enter a locked block
                 if (instance == null)
                 {
                     lock (syncLock)
                     {
+                        // Once in the block, check again and if still null
                         if(instance == null)
                         {
                             instance = new ChocolateBuilder_ThreadSafe();
