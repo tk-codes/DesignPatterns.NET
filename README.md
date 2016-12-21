@@ -1,7 +1,9 @@
 # DesignPatterns.NET
 Design Patterns in C# / .NET
 
-[![License MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/tk-codes/DesignPatterns.NET/master/LICENSE)
+![Language C#](https://img.shields.io/badge/language-c%23-blue.svg)
+![status in progress](https://img.shields.io/badge/status-in%20progress-brightgreen.svg)
+![number of patterns](https://img.shields.io/badge/patterns-1-red.svg)
 
 ## Creational Patterns
 
@@ -13,6 +15,7 @@ Design Patterns in C# / .NET
 
 ## Behavioral Patterns
 
-# License
-
-This project is licensed under the terms of the MIT license.
+### References
+* HeadFirst Design Patterns
+* MSDN - [Patterns & Practices](https://msdn.microsoft.com/en-us/library/ff921345.aspx)
+* dotFactory - http://www.dofactory.com/net/design-patterns
