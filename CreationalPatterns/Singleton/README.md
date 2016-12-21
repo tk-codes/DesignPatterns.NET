@@ -2,6 +2,8 @@
 
 ![ChocolateBoiler as Singleton](/CreationalPatterns/doc/Singleton.png)
 
+Ensure a class has only one instance, and provide a global point of access to it.
+
 ## Static Initialization
 
 :thumbsup: **You may want to create your Singleton eagerly**, if
