@@ -7,13 +7,42 @@ Design Patterns in C# / .NET
 
 ## Creational Patterns
 
-1. Abstract Factory
-2. Builder
-3. [Singleton](/CreationalPatterns/Singleton/)
+* Abstract Factory
+* Builder
+* Factory Method :bangbang:
+* Lazy Initialization
+* Prototype
+* [Singleton](/CreationalPatterns/Singleton/) :bangbang:
 
 ## Structural Patterns
+* Adapter :bangbang:
+* Bridge
+* Composite :bangbang:
+* Decorator :bangbang:
+* Facade :bangbang:
+* Flyweight
+* Proxy
 
 ## Behavioral Patterns
+* Chain of responsibility
+* Command :bangbang:
+* Interpreter
+* Iterator
+* Mediator
+* Memento
+* Null Object :bangbang:
+* Observer :bangbang:
+* State * :bangbang:
+* Strategy :bangbang:
+* Template Method :bangbang:
+* Visitor
+* Use case / Session / Application Controller :bangbang:
+
+## Architectural Patterns
+* MVC :bangbang:
+
+## Concurrency patterns
+
 
 ### References
 * HeadFirst Design Patterns
