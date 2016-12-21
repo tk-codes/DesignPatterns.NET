@@ -6,28 +6,24 @@ using System.Threading.Tasks;
 
 namespace CreationalPatterns.Singleton
 {
-    class ChocolateBoiler
+    public sealed class ChocolateBoiler_StaticInit
     {
         public bool Empty { get; set; }
         public bool Boiled { get; set; }
 
         // singleton instance
-        private static ChocolateBoiler instance;
+        private static readonly ChocolateBoiler_StaticInit instance = new ChocolateBoiler_StaticInit();
 
-        private ChocolateBoiler()
+        private ChocolateBoiler_StaticInit()
         {
             this.Empty = true;
             this.Boiled = false;
         }
 
-        public static ChocolateBoiler Instance
+        public static ChocolateBoiler_StaticInit Instance
         {
             get
             {
-                if(instance == null)
-                {
-                    instance = new ChocolateBoiler();
-                }
                 return instance;
             }
         }
@@ -48,7 +44,7 @@ namespace CreationalPatterns.Singleton
         {
             // To drain the boiler, it must be full and also boiled.
             // Once it is drained we set the Empty property back to true
-            if(!this.Empty && this.Boiled)
+            if (!this.Empty && this.Boiled)
             {
                 // drain the boiled milk and chocolate
                 this.Empty = true;
@@ -59,7 +55,7 @@ namespace CreationalPatterns.Singleton
         {
             // To boil the mixture, the boiler has to be full and not already boiled.
             // Once it is boiled we set the boiled flag to true
-            if(!this.Empty && !this.Boiled)
+            if (!this.Empty && !this.Boiled)
             {
                 // bring the contents to a boil
                 this.Boiled = true;

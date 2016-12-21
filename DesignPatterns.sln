@@ -10,15 +10,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "doc", "doc", "{5F946B5C-E2E4-4740-B8C9-8EAC24BCFA38}"
-EndProject
-Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "Diagrams", "Diagrams\Diagrams.modelproj", "{65DF9949-9385-4C80-A529-54EB58F9F1D7}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CreationalPatterns", "CreationalPatterns", "{4C621B54-9BDF-4842-91DA-45DC95063B9C}"
-	ProjectSection(SolutionItems) = preProject
-		CreationalPatterns\Singleton.cd = CreationalPatterns\Singleton.cd
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,15 +20,8 @@ Global
 		{32536589-DE08-4C37-962F-2C92136B239E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{32536589-DE08-4C37-962F-2C92136B239E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{32536589-DE08-4C37-962F-2C92136B239E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{65DF9949-9385-4C80-A529-54EB58F9F1D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{65DF9949-9385-4C80-A529-54EB58F9F1D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{65DF9949-9385-4C80-A529-54EB58F9F1D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{65DF9949-9385-4C80-A529-54EB58F9F1D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{4C621B54-9BDF-4842-91DA-45DC95063B9C} = {5F946B5C-E2E4-4740-B8C9-8EAC24BCFA38}
 	EndGlobalSection
 EndGlobal
