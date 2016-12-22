@@ -2,7 +2,7 @@
 
 Ensure a class has only one instance, and provide a global point of access to it.
 
-![ChocolateBoiler as Singleton](/CreationalPatterns/doc/Singleton.png)
+![ChocolateBoiler as Singleton](/Diagrams/Singleton.png)
 
 ## Static Initialization
 
