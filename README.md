@@ -11,40 +11,46 @@ Design Patterns in C# / .NET
 ---|--- | ---
  | Abstract Factory
  | Builder
- | Factory Method | :memo:
+ | Factory Method | :warning:
  | Lazy Initialization
  | Prototype
-:heavy_check_mark: | [Singleton](/CreationalPatterns/Singleton/) | :pencil:
+:heavy_check_mark: | [Singleton](/CreationalPatterns/Singleton/) | :warning:
 
 ## Structural Patterns
-* Adapter :warning:
-* Bridge
-* Composite :warning:
-* Decorator :warning:
-* Facade :warning:
-* Flyweight
-* Proxy
+
+ | Pattern | SE1
+---|--- | ---
+ | Adapter | :warning:
+ | Bridge
+ | Composite | :warning:
+ | Decorator | :warning:
+ | Facade | :warning:
+ | Flyweight
+ | Proxy
 
 ## Behavioral Patterns
 
  | Pattern | SE1
 ---|--- | ---
  | Chain of responsibility
- | Command :warning:
+ | Command | :warning:
  | Interpreter
  | Iterator
  | Mediator
  | Memento
- | Null Object :warning:
- | Observer :warning:
- | State * :warning:
-:heavy_check_mark: | [Strategy](/BehavioralPatterns/Strategy/) | :pencil:
- | Template Method :warning:
+ | Null Object | :warning:
+ | Observer | :warning:
+ | State | :warning:
+:heavy_check_mark: | [Strategy](/BehavioralPatterns/Strategy/) | :warning:
+ | Template Method | :warning:
  | Visitor
- | Use case / Session / Application Controller :warning:
+ | Use case / Session / Application Controller | :warning:
 
 ## Architectural Patterns
-* MVC :warning:
+
+ | Pattern | SE1
+---|--- | ---
+ | MVC | :warning:
 
 ## Concurrency patterns
 
