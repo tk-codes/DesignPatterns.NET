@@ -3,7 +3,7 @@ Design Patterns in C# / .NET
 
 ![Language C#](https://img.shields.io/badge/language-c%23-blue.svg)
 ![status in progress](https://img.shields.io/badge/status-in%20progress-brightgreen.svg)
-![number of patterns](https://img.shields.io/badge/patterns-2-red.svg)
+![number of patterns](https://img.shields.io/badge/patterns-3-red.svg)
 
 ## Creational Patterns
 
@@ -11,7 +11,7 @@ Design Patterns in C# / .NET
 ---|--- | ---
  | Abstract Factory
  | Builder
- | Factory Method | :warning:
+:heavy_check_mark: | [Factory Method](/CreationalPatterns/FactoryMethod/) | :warning:
  | Lazy Initialization
  | Prototype
 :heavy_check_mark: | [Singleton](/CreationalPatterns/Singleton/) | :warning:
