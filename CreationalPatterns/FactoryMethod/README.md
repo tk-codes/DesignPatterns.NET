@@ -8,36 +8,40 @@ A factory method
 
 **Usage**
 ```cs
-abstract Product factoryMethod(String type);
+        // A facotry method
+        //    1. is abstract so the subclass are counted on to handle object creation.
+        //    2. returns a Product.
+        //    3. isolates the client from knowing what of concrete Product is actually created.
+        //    4. may be parameterized (or not) to select among several variations of a product.
+        protected abstract Pizza CreatePizza(PizzaType type);
 ```
 
+![Pizza Store with Factory Method](/Diagrams/FactoryMethod.png)
 
-![Duck App with Strategy Pattern](/Diagrams/Strategy.png)
-
-**Usage**
+**Definition**
 ```cs
-Duck mallard = new MallardDuck();
-mallard.PerformQuack();
-mallard.PerformFly();
-
-// change the flying behavior dynamically
-Duck model = new ModelDuck();
-model.PerformFly(); // default behavior
-model.FlyBehavior = new FlyRocketPowered();  // set a different flying behavior at runtime
-model.PerformFly();
+            PizzaStore americanStore = new AmericanPizzaStore();
+            Pizza pizza = americanStore.OrderPizza(PizzaType.Veggie);
+            Console.WriteLine("Esposito ordered a " + pizza.Name);
+            
+            // Italian Pizza Store
+            PizzaStore italianStore = new ItalianPizzaStore();
+            Pizza pizza = italianStore.OrderPizza(PizzaType.Cheese);
+            Console.WriteLine("Esposito ordered a " + pizza.Name);
 ```
 
 ## Common Structure
 
-![Common structure of strategy pattern](http://www.dofactory.com/images/diagrams/net/strategy.gif)
+![Common structure of factory method pattern](http://www.dofactory.com/images/diagrams/net/factory.gif)
 
-* Strategy  (SortStrategy)
- * declares an interface common to all supported algorithms. Context uses this interface to call the algorithm defined by a ConcreteStrategy
-* ConcreteStrategy  (QuickSort, ShellSort, MergeSort)
- * implements the algorithm using the Strategy interface
-* Context  (SortedList)
- * is configured with a ConcreteStrategy object
- * maintains a reference to a Strategy object
- * may define an interface that lets Strategy access its data.
+* Product (Pizza)
+ * defines the interface of objects the factory method creates
+* ConcreteProduct (ItalianCheesePizza, AmericanCheesePizza etc.)
+ * implements the Product interface
+* Creator  (PizzaStore)
+ * declares the abstract factory method which returns an instance of type Product.
+ * may call the factory method to return an instance (OrderPizza calls CreatePizza)
+* ConcreteCreator(AmericanPizzaStore)
+ * overrides the abstract factory method to return an instance of a ConcreteProduct (eg. AmericanCheesePizza)
 
-_[Source: http://www.dofactory.com/net/strategy-design-pattern]_
+_[Source: http://www.dofactory.com/net/factory-method-design-pattern]_
