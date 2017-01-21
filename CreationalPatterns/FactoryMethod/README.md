@@ -6,7 +6,7 @@ A factory method
 * handles object creation and
 * encapsulates it in a subclass.
 
-**Usage**
+**Definition**
 ```cs
         // A facotry method
         //    1. is abstract so the subclass are counted on to handle object creation.
