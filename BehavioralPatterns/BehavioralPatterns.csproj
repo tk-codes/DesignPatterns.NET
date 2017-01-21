@@ -47,15 +47,14 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Strategy\Duck.cs" />
     <Compile Include="Strategy\FlyBehavior.cs" />
+    <Compile Include="Strategy\QuackBehavior.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="ClassDiagram1.cd" />
+    <None Include="doc\Strategy.cd" />
     <None Include="Strategy\README.md" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="doc\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
