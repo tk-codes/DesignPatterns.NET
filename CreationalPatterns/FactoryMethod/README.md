@@ -18,7 +18,7 @@ A factory method
 
 ![Pizza Store with Factory Method](/Diagrams/FactoryMethod.png)
 
-**Definition**
+**Usage**
 ```cs
             PizzaStore americanStore = new AmericanPizzaStore();
             Pizza pizza = americanStore.OrderPizza(PizzaType.Veggie);
