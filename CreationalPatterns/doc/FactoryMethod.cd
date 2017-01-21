@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CreationalPatterns.FactoryMethod.PizzaStore">
+    <Position X="1.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FactoryMethod\PizzaStore.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CreationalPatterns.FactoryMethod.AmericanPizzaStore">
+    <Position X="2.75" Y="2.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FactoryMethod\PizzaStore.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CreationalPatterns.FactoryMethod.ItalianPizzaStore">
+    <Position X="0.5" Y="2.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FactoryMethod\PizzaStore.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CreationalPatterns.FactoryMethod.Pizza">
+    <Position X="4" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAQAAAAAAAAgQAAAAAAAAAAAAAAAAAQQA=</HashCode>
+      <FileName>FactoryMethod\Pizza.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CreationalPatterns.FactoryMethod.AmericanCheesePizza">
+    <Position X="2.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FactoryMethod\Pizza.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CreationalPatterns.FactoryMethod.AmericanVeggiePizza">
+    <Position X="7.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FactoryMethod\Pizza.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CreationalPatterns.FactoryMethod.ItalianCheesePizza">
+    <Position X="0.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FactoryMethod\Pizza.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CreationalPatterns.FactoryMethod.ItalianVeggiePizza">
+    <Position X="5.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FactoryMethod\Pizza.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="CreationalPatterns.FactoryMethod.PizzaType">
+    <Position X="6.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FactoryMethod\Pizza.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
