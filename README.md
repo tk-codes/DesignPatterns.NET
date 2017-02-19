@@ -3,7 +3,7 @@ Design Patterns in C# / .NET
 
 ![Language C#](https://img.shields.io/badge/language-c%23-blue.svg)
 ![status in progress](https://img.shields.io/badge/status-in%20progress-brightgreen.svg)
-![number of patterns](https://img.shields.io/badge/patterns-3-red.svg)
+![number of patterns](https://img.shields.io/badge/patterns-4-red.svg)
 
 ## Creational Patterns
 
@@ -39,12 +39,11 @@ Design Patterns in C# / .NET
  | Mediator
  | Memento
  | Null Object | :warning:
- | Observer | :warning:
+ :heavy_check_mark:| [Observer](/BehavioralPatterns/Observer/) | :warning:
  | State | :warning:
 :heavy_check_mark: | [Strategy](/BehavioralPatterns/Strategy/) | :warning:
  | Template Method | :warning:
  | Visitor
- | Use case / Session / Application Controller | :warning:
 
 ## Architectural Patterns
 

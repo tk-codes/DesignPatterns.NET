@@ -16,7 +16,7 @@ namespace BehavioralPatterns.Observer
     public class WeatherData : IObservable<WeatherData>
     {
         private List<IObserver<WeatherData>> observers;
-        private float temperature, humidity, pressure;
+        private float temperature;
 
         public float Temperature
         {

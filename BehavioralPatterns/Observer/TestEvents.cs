@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace BehavioralPatterns.Observer
 {
-    public class TestObserverPattern
+    public class TestEvents
     {
         public static void Run()
         {
-            WeatherData data = new WeatherData(13);
+            WeatherDataWithEvent data = new WeatherDataWithEvent(13);
 
-            CurrentConditionDisplay display1 = new CurrentConditionDisplay("Display1", data);
+            CurrentConditionDisplayWithEvent display1 = new CurrentConditionDisplayWithEvent("Display1", data);
             // OUTPUT --> Display1 - Temperature: 13
-            CurrentConditionDisplay display2 = new CurrentConditionDisplay("Display2", data);
+            CurrentConditionDisplayWithEvent display2 = new CurrentConditionDisplayWithEvent("Display2", data);
             // OUTPUT --> Display2 - Temperature: 13
 
             // update the temperature.
@@ -28,7 +28,7 @@ namespace BehavioralPatterns.Observer
                Display2 - Temperature: 14
             */
 
-            data.removeObserver(display2);
+            data.OnTemperatureChanged -= display2.OnTemperatureChanged;
             data.Temperature = 15;
 
             // Only Display 1 shows the new temperature

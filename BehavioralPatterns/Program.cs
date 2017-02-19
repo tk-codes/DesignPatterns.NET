@@ -10,7 +10,7 @@ namespace BehavioralPatterns
     {
         static void Main(string[] args)
         {
-            Observer.TestObserverPattern.Run();
+            Observer.TestEvents.Run();
         }
     }
 }
