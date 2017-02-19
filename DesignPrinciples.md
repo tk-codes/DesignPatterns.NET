@@ -13,3 +13,5 @@
 ** No class should derive from a concrete class. --> Derive from an interface or an abstract class
 ** No method should override an implemented method of any of its base classes.
 
+* Strive for loosely coupled designs between objects that interact.
+
