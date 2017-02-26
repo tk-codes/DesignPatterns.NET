@@ -43,6 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbstractFactory\Dough.cs" />
+    <Compile Include="AbstractFactory\Pizza.cs" />
+    <Compile Include="AbstractFactory\PizzaIngredientFactory.cs" />
+    <Compile Include="AbstractFactory\PizzaStore.cs" />
+    <Compile Include="AbstractFactory\TestAbstractFactory.cs" />
     <Compile Include="FactoryMethod\Pizza.cs" />
     <Compile Include="FactoryMethod\PizzaStore.cs" />
     <Compile Include="FactoryMethod\TestPizzaFactoryMethod.cs" />
@@ -52,14 +57,14 @@
     <Compile Include="Singleton\ChocolateBoiler_ThreadSafe.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="AbstractFactory\README.md" />
     <None Include="App.config" />
+    <None Include="doc\AbstractFactory.cd" />
     <None Include="doc\FactoryMethod.cd" />
     <None Include="doc\Singleton.cd" />
     <None Include="FactoryMethod\README.md" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="AbstractFactory\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CreationalPatterns.AbstractFactory.ItalianPizzaIngredientFactory">
+    <Position X="4.5" Y="5.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAABAA=</HashCode>
+      <FileName>AbstractFactory\PizzaIngredientFactory.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CreationalPatterns.AbstractFactory.AmericanPizzaIngredientFactory">
+    <Position X="7.25" Y="5.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAABAA=</HashCode>
+      <FileName>AbstractFactory\PizzaIngredientFactory.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.375" />
+  </Class>
+  <Class Name="CreationalPatterns.AbstractFactory.Pizza">
+    <Position X="1.75" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAQAAAAAAAAgQAAAAAAAAAAAAAAAAAQQA=</HashCode>
+      <FileName>AbstractFactory\Pizza.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Dough" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CreationalPatterns.AbstractFactory.CheesePizza">
+    <Position X="0.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAIAAAAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AbstractFactory\Pizza.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="ingredientFactory" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CreationalPatterns.AbstractFactory.VeggiePizza">
+    <Position X="3" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAIAAAAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AbstractFactory\Pizza.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="ingredientFactory" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CreationalPatterns.AbstractFactory.ThickCrustDough">
+    <Position X="5" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAABAA=</HashCode>
+      <FileName>AbstractFactory\Dough.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CreationalPatterns.AbstractFactory.ThinCrustDough">
+    <Position X="7.5" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAABAA=</HashCode>
+      <FileName>AbstractFactory\Dough.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CreationalPatterns.AbstractFactory.PizzaStore">
+    <Position X="1.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AbstractFactory\PizzaStore.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CreationalPatterns.AbstractFactory.AmericanPizzaStore">
+    <Position X="3" Y="3.25" Width="1.5" />
+    <AssociationLine Name="ingredientFactory" Type="CreationalPatterns.AbstractFactory.PizzaIngredientFactory">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.407" Y="0.118" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AbstractFactory\PizzaStore.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="ingredientFactory" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CreationalPatterns.AbstractFactory.ItalianPizzaStore">
+    <Position X="0.5" Y="3.25" Width="1.5" />
+    <InheritanceLine Type="CreationalPatterns.AbstractFactory.PizzaStore" FixedToPoint="true">
+      <Path>
+        <Point X="2.5" Y="2.796" />
+        <Point X="2.5" Y="3" />
+        <Point X="1.25" Y="3" />
+        <Point X="1.25" Y="3.25" />
+      </Path>
+    </InheritanceLine>
+    <AssociationLine Name="ingredientFactory" Type="CreationalPatterns.AbstractFactory.PizzaIngredientFactory">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="0.093" Y="0.143" Height="0.182" Width="1.337" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AbstractFactory\PizzaStore.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="ingredientFactory" />
+    </ShowAsAssociation>
+  </Class>
+  <Interface Name="CreationalPatterns.AbstractFactory.PizzaIngredientFactory">
+    <Position X="1.5" Y="5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAABAA=</HashCode>
+      <FileName>AbstractFactory\PizzaIngredientFactory.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CreationalPatterns.AbstractFactory.Dough">
+    <Position X="6.5" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>AbstractFactory\Dough.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="CreationalPatterns.FactoryMethod.PizzaType">
+    <Position X="1.75" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FactoryMethod\Pizza.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

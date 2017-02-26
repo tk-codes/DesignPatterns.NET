@@ -1,4 +1,4 @@
-﻿using CreationalPatterns.FactoryMethod;
+﻿using CreationalPatterns;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +11,7 @@ namespace CreationalPatterns
     {
         static void Main(string[] args)
         {
-            TestPizzaFactoryMethod.run();
+            AbstractFactory.TestAbstractFactory.run();
         }
     }
 }
