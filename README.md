@@ -3,13 +3,13 @@ Design Patterns in C# / .NET
 
 ![Language C#](https://img.shields.io/badge/language-c%23-blue.svg)
 ![status in progress](https://img.shields.io/badge/status-in%20progress-brightgreen.svg)
-![number of patterns](https://img.shields.io/badge/patterns-4-red.svg)
+![number of patterns](https://img.shields.io/badge/patterns-5-red.svg)
 
 ## Creational Patterns
 
  | Pattern | SE1
 ---|--- | ---
- | Abstract Factory
+:heavy_check_mark: | [Abstract Factory](/CreationalPatterns/AbstractFactory/)
  | Builder
 :heavy_check_mark: | [Factory Method](/CreationalPatterns/FactoryMethod/) | :warning:
  | Lazy Initialization

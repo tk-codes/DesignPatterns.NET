@@ -35,7 +35,7 @@ namespace CreationalPatterns.AbstractFactory
         }
     }
 
-    // American Pizzas
+    // Cheese Pizzas
     public class CheesePizza : Pizza{
         private string description = "Cheese Pizza";
         private PizzaIngredientFactory ingredientFactory;

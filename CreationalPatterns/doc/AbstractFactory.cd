@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="CreationalPatterns.AbstractFactory.ItalianPizzaIngredientFactory">
-    <Position X="4.5" Y="5.25" Width="2.25" />
+    <Position X="4.5" Y="5.5" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAABAA=</HashCode>
       <FileName>AbstractFactory\PizzaIngredientFactory.cs</FileName>
@@ -9,7 +9,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="CreationalPatterns.AbstractFactory.AmericanPizzaIngredientFactory">
-    <Position X="7.25" Y="5.25" Width="2.5" />
+    <Position X="7.25" Y="5.5" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAABAA=</HashCode>
       <FileName>AbstractFactory\PizzaIngredientFactory.cs</FileName>
@@ -47,7 +47,7 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="CreationalPatterns.AbstractFactory.ThickCrustDough">
-    <Position X="5" Y="12.25" Width="1.5" />
+    <Position X="7.75" Y="7.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAABAA=</HashCode>
       <FileName>AbstractFactory\Dough.cs</FileName>
@@ -55,7 +55,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="CreationalPatterns.AbstractFactory.ThinCrustDough">
-    <Position X="7.5" Y="12.25" Width="1.5" />
+    <Position X="5.25" Y="7.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAABAA=</HashCode>
       <FileName>AbstractFactory\Dough.cs</FileName>
@@ -115,14 +115,14 @@
     </TypeIdentifier>
   </Interface>
   <Interface Name="CreationalPatterns.AbstractFactory.Dough">
-    <Position X="6.5" Y="10.25" Width="1.5" />
+    <Position X="6.5" Y="10" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAA=</HashCode>
       <FileName>AbstractFactory\Dough.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Enum Name="CreationalPatterns.FactoryMethod.PizzaType">
-    <Position X="1.75" Y="12.5" Width="1.5" />
+    <Position X="3.75" Y="11.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAgAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>FactoryMethod\Pizza.cs</FileName>
