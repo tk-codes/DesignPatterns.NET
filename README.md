@@ -7,49 +7,49 @@ Design Patterns in C# / .NET
 
 ## Creational Patterns
 
- | Pattern | SE1
----|--- | ---
-:heavy_check_mark: | [Abstract Factory](/CreationalPatterns/AbstractFactory/)
- | Builder
-:heavy_check_mark: | [Factory Method](/CreationalPatterns/FactoryMethod/) | :warning:
- | Lazy Initialization
- | Prototype
-:heavy_check_mark: | [Singleton](/CreationalPatterns/Singleton/) | :warning:
+| | Pattern | SE1
+| ---|--- | --- |
+|:heavy_check_mark: | [Abstract Factory](/CreationalPatterns/AbstractFactory/)|
+| | Builder|
+|:heavy_check_mark: | [Factory Method](/CreationalPatterns/FactoryMethod/) | :warning:
+| | Lazy Initialization
+| | Prototype
+|:heavy_check_mark: | [Singleton](/CreationalPatterns/Singleton/) | :warning:
 
 ## Structural Patterns
 
- | Pattern | SE1
----|--- | ---
- | Adapter | :warning:
- | Bridge
- | Composite | :warning:
- | Decorator | :warning:
- | Facade | :warning:
- | Flyweight
- | Proxy
+| | Pattern | SE1
+|---|--- | ---
+| | Adapter | :warning:
+| | Bridge
+| | Composite | :warning:
+| | Decorator | :warning:
+| | Facade | :warning:
+| | Flyweight
+| | Proxy
 
 ## Behavioral Patterns
 
- | Pattern | SE1
----|--- | ---
- | Chain of responsibility
- | Command | :warning:
- | Interpreter
- | Iterator
- | Mediator
- | Memento
- | Null Object | :warning:
- :heavy_check_mark:| [Observer](/BehavioralPatterns/Observer/) | :warning:
- | State | :warning:
-:heavy_check_mark: | [Strategy](/BehavioralPatterns/Strategy/) | :warning:
- | Template Method | :warning:
- | Visitor
+| | Pattern | SE1|
+| ---|--- | ---|
+| | Chain of responsibility
+| | Command | :warning:
+| | Interpreter
+| | Iterator
+| | Mediator
+| | Memento
+| | Null Object | :warning:
+| :heavy_check_mark:| [Observer](/BehavioralPatterns/Observer/) | :warning:
+| | State | :warning:
+|:heavy_check_mark: | [Strategy](/BehavioralPatterns/Strategy/) | :warning:
+| | Template Method | :warning:
+| | Visitor
 
 ## Architectural Patterns
 
- | Pattern | SE1
+| | Pattern | SE1
 ---|--- | ---
- | MVC | :warning:
+| | MVC | :warning:
 
 ## Concurrency patterns
 
