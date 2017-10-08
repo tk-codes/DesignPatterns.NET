@@ -3,7 +3,7 @@ Design Patterns in C# / .NET
 
 ![Language C#](https://img.shields.io/badge/language-c%23-blue.svg)
 ![status in progress](https://img.shields.io/badge/status-in%20progress-brightgreen.svg)
-![number of patterns](https://img.shields.io/badge/patterns-6-red.svg)
+![number of patterns](https://img.shields.io/badge/patterns-7-red.svg)
 
 ## Creational Patterns
 
@@ -42,7 +42,7 @@ Design Patterns in C# / .NET
 | :heavy_check_mark:| [Observer](/BehavioralPatterns/Observer/) | :warning:
 | | State | :warning:
 |:heavy_check_mark: | [Strategy](/BehavioralPatterns/Strategy/) | :warning:
-| | Template Method | :warning:
+|:heavy_check_mark: | [Template Method](/BehavioralPatterns/TemplateMethod) | :warning:
 | | Visitor
 
 ### References

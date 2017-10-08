@@ -35,13 +35,13 @@ A factory method
 ![Common structure of factory method pattern](http://www.dofactory.com/images/diagrams/net/factory.gif)
 
 * Product (Pizza)
- * defines the interface of objects the factory method creates
+  * defines the interface of objects the factory method creates
 * ConcreteProduct (ItalianCheesePizza, AmericanCheesePizza etc.)
- * implements the Product interface
+  * implements the Product interface
 * Creator  (PizzaStore)
- * declares the abstract factory method which returns an instance of type Product.
- * may call the factory method to return an instance (OrderPizza calls CreatePizza)
+  * declares the abstract factory method which returns an instance of type Product.
+  * may call the factory method to return an instance (OrderPizza calls CreatePizza)
 * ConcreteCreator(AmericanPizzaStore)
- * overrides the abstract factory method to return an instance of a ConcreteProduct (eg. AmericanCheesePizza)
+  * overrides the abstract factory method to return an instance of a ConcreteProduct (eg. AmericanCheesePizza)
 
 _[Source: http://www.dofactory.com/net/factory-method-design-pattern]_

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BehavioralPatterns.TemplateMethod.CaffeineBeverage">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAQAgAAAAAAAACAAAAAAAABAA=</HashCode>
+      <FileName>TemplateMethod\CaffeineBeverage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BehavioralPatterns.TemplateMethod.Coffee">
+    <Position X="6.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TemplateMethod\CaffeineBeverage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BehavioralPatterns.TemplateMethod.Tea">
+    <Position X="4" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TemplateMethod\CaffeineBeverage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

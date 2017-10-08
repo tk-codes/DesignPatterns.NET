@@ -19,20 +19,73 @@ Usually, subclasses control how the behavior of a parent class is redefined, and
 The **template method** controls how subclasses redefine a behavior. This is also referred to as *inversion of control* because subclasses do no longer control how the behavior of a parent class redefined.
 
 **Definition**
+
+![Template Method Example](/Diagrams/TemplateMethod.img)
+
 ```cs
+public abstract class CaffeineBeverage
+    {
 
+        // Template Method
+        // It serves as a template for an algorithm.
+        // In this case, an algorithm for making caffeinated beverages.
+        public void PrepareRecipe()
+        {
+            BoilWater();
+            Brew(); // abstract -> handled by subclass
+            PourInCup();
+            AddCondiments(); // abstract --> handled by subclass
+        }
+
+        public abstract void Brew();
+        public abstract void AddCondiments();
+
+        public void BoilWater()
+        {
+            Console.WriteLine("Boiling water");
+        }
+
+        public void PourInCup()
+        {
+            Console.WriteLine("Pouring in a cup");
+        }
+    }
 ```
-
-![Template Method Pattern](https://en.wikipedia.org/wiki/Template_method_pattern#/media/File:W3sDesign_Template_Method_Design_Pattern_UML.jpg)
 
 **Usage**
 ```cs
-           
+public class Tea : CaffeineBeverage
+    {
+        public override void Brew()
+        {
+           Console.WriteLine("Steeping the tea");
+        }
+
+        public override void AddCondiments()
+        {
+            Console.WriteLine("Adding Lemon");
+        }
+    }
+```
+
+```cs
+    public class Coffee : CaffeineBeverage
+    {
+        public override void Brew()
+        {
+            Console.WriteLine("Dripping Coffee through filter");
+        }
+
+        public override void AddCondiments()
+        {
+            Console.WriteLine("Adding Sugar and Milk");
+        }
+    }
 ```
 
 ## Common Structure
 
-![Common structure of template method pattern](http://www.dofactory.com/images/diagrams/net/template.gif)
+![Common structure of template method pattern](https://en.wikipedia.org/wiki/Template_method_pattern#/media/File:W3sDesign_Template_Method_Design_Pattern_UML.jpg)
 
 * AbstractClass (DataObject)
   * defines abstract primitive operations that concrete subclasses define to implement steps of an algorithm
