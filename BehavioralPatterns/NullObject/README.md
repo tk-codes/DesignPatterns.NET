@@ -56,3 +56,7 @@ log.Write(request);
 ```cs
 log?.Write(request);
 ```
+
+### Note
+
+Null-Object cannot be used for Immutable classes (eg. `String`).

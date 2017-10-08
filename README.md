@@ -3,7 +3,7 @@ Design Patterns in C# / .NET
 
 ![Language C#](https://img.shields.io/badge/language-c%23-blue.svg)
 ![status in progress](https://img.shields.io/badge/status-in%20progress-brightgreen.svg)
-![number of patterns](https://img.shields.io/badge/patterns-5-red.svg)
+![number of patterns](https://img.shields.io/badge/patterns-6-red.svg)
 
 ## Creational Patterns
 
@@ -18,15 +18,15 @@ Design Patterns in C# / .NET
 
 ## Structural Patterns
 
-| | Pattern | SE1
-|---|--- | ---
-| | Adapter | :warning:
-| | Bridge
-| | Composite | :warning:
-| | Decorator | :warning:
-| | Facade | :warning:
-| | Flyweight
-| | Proxy
+| | Pattern | 
+|---|--- | 
+| | Adapter | 
+| | Bridge |
+| | Composite | 
+| | Decorator | 
+| | Facade | 
+| | Flyweight |
+| | Proxy |
 
 ## Behavioral Patterns
 
@@ -38,21 +38,12 @@ Design Patterns in C# / .NET
 | | Iterator
 | | Mediator
 | | Memento
-| | Null Object | :warning:
+| :heavy_check_mark: | [Null Object](/BehavioralPatterns/NullObject) | :warning:
 | :heavy_check_mark:| [Observer](/BehavioralPatterns/Observer/) | :warning:
 | | State | :warning:
 |:heavy_check_mark: | [Strategy](/BehavioralPatterns/Strategy/) | :warning:
 | | Template Method | :warning:
 | | Visitor
-
-## Architectural Patterns
-
-| | Pattern | SE1
----|--- | ---
-| | MVC | :warning:
-
-## Concurrency patterns
-
 
 ### References
 * HeadFirst Design Patterns
