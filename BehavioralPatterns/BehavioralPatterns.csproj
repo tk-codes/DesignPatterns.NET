@@ -57,11 +57,14 @@
     <Compile Include="Strategy\Duck.cs" />
     <Compile Include="Strategy\FlyBehavior.cs" />
     <Compile Include="Strategy\QuackBehavior.cs" />
+    <Compile Include="TemplateMethod\CaffeineBeverage.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="doc\NullObject.cd" />
     <None Include="doc\Observer.cd" />
     <None Include="doc\Strategy.cd" />
+    <None Include="doc\TemplateMethod.cd" />
     <None Include="NullObject\README.md" />
     <None Include="Observer\README.md" />
     <None Include="Strategy\README.md" />
