@@ -80,13 +80,13 @@ The Abstract Factory Pattern provides an interface for creating families of rela
 ![Common structure of abstract factoring pattern](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Abstract_factory_UML.svg/677px-Abstract_factory_UML.svg.png)
 
 * AbstractFactory (PizzaIngredientFactory)
- * declares an interface for operations that create abstract products
+  * declares an interface for operations that create abstract products
 * ConcreteFactory (ItalianPizzaIngredientFactory, AmericanPizzaIngredientFactory)
- * implements the operations to create concrete product objects
+  * implements the operations to create concrete product objects
 * AbstractProduct  (Dough)
- * declares an interface for a type of product object
+  * declares an interface for a type of product object
 * ConcreteProduct(ThinCrustDough, ThickCrustDough)
- * defines a product object to be created by the corresponding concrete factory
- * implements the AbstractProduct interface
+  * defines a product object to be created by the corresponding concrete factory
+  * implements the AbstractProduct interface
 
 _[Source: http://www.dofactory.com/net/abstract-factory-design-pattern]_
