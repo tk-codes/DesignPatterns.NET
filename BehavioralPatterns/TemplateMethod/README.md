@@ -20,7 +20,7 @@ The **template method** controls how subclasses redefine a behavior. This is als
 
 **Definition**
 
-![Template Method Example](/Diagrams/TemplateMethod.img)
+![Template Method Example](/Diagrams/TemplateMethod.png)
 
 ```cs
 public abstract class CaffeineBeverage
