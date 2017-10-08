@@ -85,12 +85,12 @@ public class Tea : CaffeineBeverage
 
 ## Common Structure
 
-![Common structure of template method pattern](https://en.wikipedia.org/wiki/Template_method_pattern#/media/File:W3sDesign_Template_Method_Design_Pattern_UML.jpg)
+![Common structure of template method pattern](https://upload.wikimedia.org/wikipedia/commons/2/2a/W3sDesign_Template_Method_Design_Pattern_UML.jpg)
 
-* AbstractClass (DataObject)
+* AbstractClass (CaffeineBeverage)
   * defines abstract primitive operations that concrete subclasses define to implement steps of an algorithm
   * implements a template method defining the skeleton of an algorithm. The template method calls primitive operations as well as operations defined in AbstractClass or those of other objects.
-* ConcreteClass (CustomerDataObject)
+* ConcreteClass (Tea, Coffee)
   * implements the primitive operations ot carry out subclass-specific steps of the algorithm
 
 _[Source: http://www.dofactory.com/net/template-method-design-pattern]_
