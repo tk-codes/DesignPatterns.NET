@@ -43,6 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="NullObject\ConsoleLog.cs" />
+    <Compile Include="NullObject\ILog.cs" />
+    <Compile Include="NullObject\NullLog.cs" />
+    <Compile Include="NullObject\Service.cs" />
     <Compile Include="Observer\Events.cs" />
     <Compile Include="Observer\Observer.cs" />
     <Compile Include="Observer\Observable.cs" />
@@ -58,6 +62,7 @@
     <None Include="App.config" />
     <None Include="doc\Observer.cd" />
     <None Include="doc\Strategy.cd" />
+    <None Include="NullObject\README.md" />
     <None Include="Observer\README.md" />
     <None Include="Strategy\README.md" />
   </ItemGroup>
