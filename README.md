@@ -3,18 +3,18 @@ Design Patterns in C# / .NET
 
 ![Language C#](https://img.shields.io/badge/language-c%23-blue.svg)
 ![status in progress](https://img.shields.io/badge/status-in%20progress-brightgreen.svg)
-![number of patterns](https://img.shields.io/badge/patterns-7-red.svg)
+![number of patterns](https://img.shields.io/badge/patterns-8-red.svg)
 
 ## Creational Patterns
 
-| | Pattern | SE1
-| ---|--- | --- |
+| | Pattern |
+| ---|--- | 
 |:heavy_check_mark: | [Abstract Factory](/CreationalPatterns/AbstractFactory/)|
 | | Builder|
-|:heavy_check_mark: | [Factory Method](/CreationalPatterns/FactoryMethod/) | :warning:
+|:heavy_check_mark: | [Factory Method](/CreationalPatterns/FactoryMethod/) |
 | | Lazy Initialization
-| | Prototype
-|:heavy_check_mark: | [Singleton](/CreationalPatterns/Singleton/) | :warning:
+|:heavy_check_mark: | [Prototype](/CreationalPatterns/Prototype) |
+|:heavy_check_mark: | [Singleton](/CreationalPatterns/Singleton/) |
 
 ## Structural Patterns
 

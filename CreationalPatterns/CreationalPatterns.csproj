@@ -53,6 +53,9 @@
     <Compile Include="FactoryMethod\TestPizzaFactoryMethod.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Prototype\Shape.cs" />
+    <Compile Include="Prototype\ShapeManager.cs" />
+    <Compile Include="Prototype\TestPrototype.cs" />
     <Compile Include="Singleton\ChocolateBoiler_StaticInit.cs" />
     <Compile Include="Singleton\ChocolateBoiler_ThreadSafe.cs" />
   </ItemGroup>
@@ -63,6 +66,7 @@
     <None Include="doc\FactoryMethod.cd" />
     <None Include="doc\Singleton.cd" />
     <None Include="FactoryMethod\README.md" />
+    <None Include="Prototype\README.md" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
