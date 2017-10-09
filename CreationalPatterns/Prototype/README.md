@@ -1,6 +1,6 @@
 ﻿# Prototype
 
-Specify the kinds of objects to create using a **prototypical instance**, and **create new objects by **copying (cloning) this prototype**.
+Prototype pattern refers to creating duplicate object while keeping performance in mind.
 
 ## Problem
 
@@ -14,15 +14,16 @@ Specify the kinds of objects to create using a **prototypical instance**, and **
 ## Benefits
 
 * Hides the complexities of making new instances from the client.
-* Provides the optioni for the client to generate objects whose type is not known.
+* Provides the option for the client to generate objects whose type is not known.
 * In some circumstances, copying an object can be more efficient than creating a new object.
 
 ## Drawbacks
 
 * Making a copy of an object can sometimes be complicated and error-prone. 
 
-1. Should clonable interface implemented?
-2. Why type of object (Super class or concrete class) should the clone method return?
+Questions:
+1. Should clonable interface be implemented?
+2. What return type (Super class or concrete class) should the clone method have?
 
 **Definition**
 ```cs
@@ -36,7 +37,6 @@ public abstract class Shape
         Type = type;
     }
 
-    /*  The MemberwiseClone method creates a shallow copy by creating a new object, and then copying the nonstatic fields of the current object to the new object. If a field is a value type, a bit-by-bit copy of the field is performed. If a field is a reference type, the reference is copied but the referred object is not; therefore, the original object and its clone refer to the same object. */
     public abstract Shape Clone();
 }
 ```
@@ -50,6 +50,11 @@ public class Circle : Shape
 
     }
 
+    // The MemberwiseClone method creates a shallow copy by creating a new object.
+    // Thenand it copies the nonstatic fields of the current object to the new object.
+    // If a field is a value type, a bit-by-bit copy of the field is performed. 
+    // If a field is a reference type, the reference is copied but the referred object is not.
+    // Therefore, the original object and its clone refer to the same object.
     public override Shape Clone()
     {
         return (Shape) this.MemberwiseClone();
@@ -109,7 +114,7 @@ Shape: 2 - Square@43495525
 
 * Prototype (Shape)
   * declares an interface for cloning itself
-* ConcretePrototype (Circle, Rectangle)
+* ConcretePrototype (Circle, Square)
   * implements an operation for cloning itself
 * Client (ShapeManager)
   * creates a new object by asking a prototype to clone itself.
