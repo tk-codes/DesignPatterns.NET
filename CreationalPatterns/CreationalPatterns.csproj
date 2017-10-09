@@ -64,6 +64,7 @@
     <None Include="App.config" />
     <None Include="doc\AbstractFactory.cd" />
     <None Include="doc\FactoryMethod.cd" />
+    <None Include="doc\Prototype.cd" />
     <None Include="doc\Singleton.cd" />
     <None Include="FactoryMethod\README.md" />
     <None Include="Prototype\README.md" />
