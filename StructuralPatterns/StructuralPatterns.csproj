@@ -50,6 +50,8 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="Composite\README.md" />
+    <None Include="Decorator\README.md" />
+    <None Include="doc\Composite.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

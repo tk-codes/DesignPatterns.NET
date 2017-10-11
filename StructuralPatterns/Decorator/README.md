@@ -27,6 +27,8 @@ See complete [Cake Factory](https://gitlab.com/tk-bachelor/se1-testat3-decorator
 
 **Definition**
 
+![Decorator](https://gitlab.com/tk-bachelor/se1-testat3-decorator/raw/master/doc/DecoratorPattern.png)
+
 Component
 ```java
 public abstract class Cake {
@@ -125,7 +127,6 @@ public class WhippedCream extends CakeDecorator {
 
 }
 ```
-![Prototype](https://gitlab.com/tk-bachelor/se1-testat3-decorator/raw/master/doc/DecoratorPattern.png)
 
 **Usage**
 ```java
