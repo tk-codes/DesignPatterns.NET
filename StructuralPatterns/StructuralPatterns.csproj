@@ -57,7 +57,9 @@
     <None Include="App.config" />
     <None Include="Composite\README.md" />
     <None Include="Decorator\README.md" />
+    <None Include="doc\Adapter.cd" />
     <None Include="doc\Composite.cd" />
+    <None Include="Facade\README.md" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

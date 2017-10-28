@@ -31,19 +31,19 @@ Design Patterns in C# / .NET
 
 ## Behavioral Patterns
 
-| | Pattern | SE1|
-| ---|--- | ---|
+| | Pattern |
+| ---|--- |
 | | Chain of responsibility
-| | Command | :warning:
+| | Command |
 | | Interpreter
 | | Iterator
 | | Mediator
 | | Memento
-| :heavy_check_mark: | [Null Object](/BehavioralPatterns/NullObject) | :warning:
-| :heavy_check_mark:| [Observer](/BehavioralPatterns/Observer/) | :warning:
+| :heavy_check_mark: | [Null Object](/BehavioralPatterns/NullObject) |
+| :heavy_check_mark:| [Observer](/BehavioralPatterns/Observer/) |
 | | State | :warning:
-|:heavy_check_mark: | [Strategy](/BehavioralPatterns/Strategy/) | :warning:
-|:heavy_check_mark: | [Template Method](/BehavioralPatterns/TemplateMethod) | :warning:
+|:heavy_check_mark: | [Strategy](/BehavioralPatterns/Strategy/) |
+|:heavy_check_mark: | [Template Method](/BehavioralPatterns/TemplateMethod) |
 | | Visitor
 
 ### References
