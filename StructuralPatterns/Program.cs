@@ -10,7 +10,8 @@ namespace StructuralPatterns
     {
         static void Main(string[] args)
         {
-            Composite.TestComposite.Run();
+            Adapter.TestAdapter.Run();
+            Console.ReadKey();
         }
     }
 }

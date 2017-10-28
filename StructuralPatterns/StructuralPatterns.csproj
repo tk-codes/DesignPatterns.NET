@@ -42,16 +42,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Adapter\Duck.cs" />
+    <Compile Include="Adapter\ITurkey.cs" />
+    <Compile Include="Adapter\TestAdapter.cs" />
+    <Compile Include="Adapter\TurkeyObjectAdapter.cs" />
+    <Compile Include="Adapter\TurkeyClassAdapter.cs" />
     <Compile Include="Composite\FileSystem.cs" />
     <Compile Include="Composite\TestComposite.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Adapter\README.md" />
     <None Include="App.config" />
     <None Include="Composite\README.md" />
     <None Include="Decorator\README.md" />
     <None Include="doc\Composite.cd" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
