@@ -46,6 +46,8 @@ Write a `Adapter` class that adapts the new vendor interface into the one you're
 
 ## Example
 
+![Adapter Pattern](/Diagrams/Adapter.png)
+
 Target (Duck)
 ```cs
 // Target
