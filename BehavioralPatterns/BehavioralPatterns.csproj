@@ -43,6 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Mediator\ParticipantColleague.cs" />
+    <Compile Include="Mediator\ChatRoomMediator.cs" />
+    <Compile Include="Mediator\TestMediator.cs" />
     <Compile Include="NullObject\ConsoleLog.cs" />
     <Compile Include="NullObject\ILog.cs" />
     <Compile Include="NullObject\NullLog.cs" />
@@ -61,10 +64,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="doc\Mediator.cd" />
     <None Include="doc\NullObject.cd" />
     <None Include="doc\Observer.cd" />
     <None Include="doc\Strategy.cd" />
     <None Include="doc\TemplateMethod.cd" />
+    <None Include="Mediator\README.md" />
     <None Include="NullObject\README.md" />
     <None Include="Observer\README.md" />
     <None Include="Strategy\README.md" />

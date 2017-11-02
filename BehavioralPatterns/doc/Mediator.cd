@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BehavioralPatterns.Mediator.ChatRoom" BaseTypeListCollapsed="true">
+    <Position X="1.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAEAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Mediator\ChatRoomMediator.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="_participants" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="BehavioralPatterns.Mediator.Participant" BaseTypeListCollapsed="true">
+    <Position X="5.25" Y="2.75" Width="1.5" />
+    <AssociationLine Name="_chatRoom" Type="BehavioralPatterns.Mediator.IChatRoom" ManuallyRouted="true">
+      <Path>
+        <Point X="5.25" Y="3.816" />
+        <Point X="4.071" Y="3.816" />
+        <Point X="4.071" Y="0.872" />
+        <Point X="2.75" Y="0.872" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAEAAACAAAAAAAAAQAAAAAAAABAA=</HashCode>
+      <FileName>Mediator\ParticipantColleague.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_chatRoom" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="BehavioralPatterns.Mediator.IChatRoom">
+    <Position X="1.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Mediator\ChatRoomMediator.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="BehavioralPatterns.Mediator.IParticipant">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAQAAAAAAAABAA=</HashCode>
+      <FileName>Mediator\ParticipantColleague.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

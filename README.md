@@ -4,7 +4,7 @@ Design Patterns in C# / .NET
 [![Build Status](https://travis-ci.org/tk-codes/DesignPatterns.NET.svg?branch=master)](https://travis-ci.org/tk-codes/DesignPatterns.NET)
 ![Language C#](https://img.shields.io/badge/language-c%23-blue.svg)
 ![status in progress](https://img.shields.io/badge/status-in%20progress-brightgreen.svg)
-![number of patterns](https://img.shields.io/badge/patterns-12-red.svg)
+![number of patterns](https://img.shields.io/badge/patterns-13-red.svg)
 
 ## Creational Patterns
 
@@ -37,7 +37,7 @@ Design Patterns in C# / .NET
 | | Command |
 | | Interpreter
 | | Iterator
-| | Mediator
+|:heavy_check_mark: | [Mediator](/BehavioralPatterns/Mediator)|
 | | Memento
 | :heavy_check_mark: | [Null Object](/BehavioralPatterns/NullObject) |
 | :heavy_check_mark:| [Observer](/BehavioralPatterns/Observer/) |
