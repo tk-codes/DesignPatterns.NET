@@ -30,6 +30,23 @@ The Mediator is commonly used to coordinate related GUI components.
 * Single point of failure
 * Hard to test --> Objects should be mocked
 
+## Common Structure
+
+![Common structure of mediator pattern](https://upload.wikimedia.org/wikipedia/commons/9/92/W3sDesign_Mediator_Design_Pattern_UML.jpg)
+
+* Mediator (IChatRoom)
+  * defines an interface for communicating with Colleague objects
+* ConcreteMediator (ChatRoom)
+  * implements cooperative behavior by coordinating Colleague objects.
+  * knows and maintains its colleagues.
+* Colleague (IParticipant)
+  * defines an interface for using Colleague objects.
+* ConcreateColleague (Participant)
+  * each colleague knows its Mediator object
+  * each colleague communicates with its mediator whenever it would have otherwise communicated with another colleague.
+
+_[Source: http://www.dofactory.com/net/mediator-design-pattern]_
+
 ## Example
 
 ![Mediator Pattern](/Diagrams/Mediator.png)
@@ -120,20 +137,3 @@ IParticipant galileo = new Participant("Galileo", chatRoom);
 newton.Send(galileo.GetName(), "I discoverd laws of motion");
 einstein.Send(newton.GetName(), "I discovered how gravity works");
 ```
-
-## Common Structure
-
-![Common structure of mediator pattern](https://upload.wikimedia.org/wikipedia/commons/9/92/W3sDesign_Mediator_Design_Pattern_UML.jpg)
-
-* Mediator (IChatRoom)
-  * defines an interface for communicating with Colleague objects
-* ConcreteMediator (ChatRoom)
-  * implements cooperative behavior by coordinating Colleague objects.
-  * knows and maintains its colleagues.
-* Colleague (IParticipant)
-  * defines an interface for using Colleague objects.
-* ConcreateColleague (Participant)
-  * each colleague knows its Mediator object
-  * each colleague communicates with its mediator whenever it would have otherwise communicated with another colleague.
-
-_[Source: http://www.dofactory.com/net/mediator-design-patternttp://www.dofactory.com/net/adapter-design-pattern]_
