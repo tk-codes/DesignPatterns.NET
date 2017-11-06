@@ -2,6 +2,45 @@
 
 The Abstract Factory Pattern provides an interface for creating families of related or dependent objects without specifying their concrete classes.
 
+## Problem
+
+* Creating objects directly within the class that requires the object is inflexible
+* Changing the instantiation later without chaging the class is impossible
+* The created object cannot be reused
+* The created object is tightly coupled with the class and it makes the class hard to test because real objects can't be replaced with mock objects.
+
+## Solution
+
+* Encapsulate object creation in a separate (factory) object. That is, define an interface (AbstractFactory) for creating objects, and implement the interface.
+* A class delegates object creation to a factory object instead of creating objects directly.
+
+## Benefits
+
+* Follows the Open/Close Principle.
+* Allows building families of product objects and guarantees their compatibility.
+* Avoids tight coupling between concrete products and code that uses them.
+* Divides responsibilities between multiple classes.
+
+## Drawbacks
+
+* Increases overall code complexity by creating multiple additional classes.
+
+## Common Structure
+
+![Common structure of abstract factoring pattern](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Abstract_factory_UML.svg/677px-Abstract_factory_UML.svg.png)
+
+* AbstractFactory (PizzaIngredientFactory)
+  * declares an interface for operations that create abstract products
+* ConcreteFactory (ItalianPizzaIngredientFactory, AmericanPizzaIngredientFactory)
+  * implements the operations to create concrete product objects
+* AbstractProduct  (Dough)
+  * declares an interface for a type of product object
+* ConcreteProduct(ThinCrustDough, ThickCrustDough)
+  * defines a product object to be created by the corresponding concrete factory
+  * implements the AbstractProduct interface
+
+_[Source: http://www.dofactory.com/net/abstract-factory-design-pattern]_
+
 **Definition** - AbstractFactory and ConcreteFactory
 ```cs
     public interface PizzaIngredientFactory
@@ -74,19 +113,3 @@ The Abstract Factory Pattern provides an interface for creating families of rela
         }
     }
 ```
-
-## Common Structure
-
-![Common structure of abstract factoring pattern](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Abstract_factory_UML.svg/677px-Abstract_factory_UML.svg.png)
-
-* AbstractFactory (PizzaIngredientFactory)
-  * declares an interface for operations that create abstract products
-* ConcreteFactory (ItalianPizzaIngredientFactory, AmericanPizzaIngredientFactory)
-  * implements the operations to create concrete product objects
-* AbstractProduct  (Dough)
-  * declares an interface for a type of product object
-* ConcreteProduct(ThinCrustDough, ThickCrustDough)
-  * defines a product object to be created by the corresponding concrete factory
-  * implements the AbstractProduct interface
-
-_[Source: http://www.dofactory.com/net/abstract-factory-design-pattern]_
