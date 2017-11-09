@@ -1,139 +1,116 @@
-﻿# Momento
+﻿# Memento
 
-Use the Mediator Pattern to centralize complex communications and control between related objects.
+The Memento pattern provides the abilitiy to restore an object to its previous state later.
 
 ## Problem
 
-* Tight coupling between a set of interacting objects should be avoided.
-* It should be possible to change the interaction between a set of objects independently.
-
-*Tightly coupled objects* are hard to implement, change, test and reuse.
+* The internal state of an object should be saved externally so that the object can be restored to this state later.
+* The object's encapsulation must not be violated.
 
 ## Solution
 
-* Define a `Mediator` object that encapsulates the interaction between a set of objects.
-* Objects delegate their interaction to a mediator object instead of interacting with each other directly.
+Make an object (originator) itself responsible for
+* saving its internal state to a `memento` object and
+* restoring to a previous state from a `memento` object.
 
-This makes the objects *loosely coupled*.
+Only the originator that created a memento is allowed to access it.
 
-The Mediator is commonly used to coordinate related GUI components.
+A client (caretaker) can request a memento from the originator to save the internal state. It can also pass a memento back to the originator to restore to a previous state.
 
 ## Benefits
 
-* Colleagues classes may become more reusable and are decoupled from the system.
-* Simplifies maintenance of the system by centralizing control logic.
-* Simplifies and reduces the variety of messages sent between objects in the system.
+* Does not violate the originator's encapsulation.
+* Keeping the saved state external from the originator helps to maintain cohesion.
+* Provides easy-to-implement recovery capability.
 
 ## Drawbacks
 
-* Without proper design, the mediator object can become overly complex.
-* Single point of failure
-* Hard to test --> Objects should be mocked
+* Saving and restoring state can be time consuming.
+* It may require lots of memory if clients create mementors too often.
+* Clients should track the originator's lifecycle in order to destroy obsolete mementos.
 
 ## Common Structure
 
-![Common structure of mediator pattern](https://upload.wikimedia.org/wikipedia/commons/9/92/W3sDesign_Mediator_Design_Pattern_UML.jpg)
+![Common structure of memento pattern](https://upload.wikimedia.org/wikipedia/commons/3/38/W3sDesign_Memento_Design_Pattern_UML.jpg)
 
-* Mediator (IChatRoom)
-  * defines an interface for communicating with Colleague objects
-* ConcreteMediator (ChatRoom)
-  * implements cooperative behavior by coordinating Colleague objects.
-  * knows and maintains its colleagues.
-* Colleague (IParticipant)
-  * defines an interface for using Colleague objects.
-* ConcreateColleague (Participant)
-  * each colleague knows its Mediator object
-  * each colleague communicates with its mediator whenever it would have otherwise communicated with another colleague.
+* Memento
+  * is a value object that stores internal state of the Originator object.
+  * It is common practice to make Memento immutable and pass it data only once, via constructor.
+* Originator
+  * creates a memento containing a snapshot of its current internal state.
+  * uses the memento to restore its internal state
+* Caretaker
+  * keeps a history of originator's state by storing a stack of mementos
+  * never operates on or examines the contents of a memento
+  * When originator has to go back in history, the caretaker passes the last memento to the originator's restoration method.
 
-_[Source: http://www.dofactory.com/net/mediator-design-pattern]_
+_[Source: http://www.dofactory.com/net/memento-design-pattern]_
 
 ## Example
 
-![Mediator Pattern](/Diagrams/Mediator.png)
-
-Mediator
+Memento
 ```cs
- public interface IChatRoom
+[Serializable]
+class Memento
 {
-	void RegisterParticipant(IParticipant participant);
-	void Send(String from, String to, string message);
-}
-```
+	public string State { get; }
 
-ConcreteMediator
-```cs
-public class ChatRoom : IChatRoom
-{
-	private readonly IDictionary<string, IParticipant> _participants = new Dictionary<string, IParticipant>();
-
-	public void RegisterParticipant(IParticipant participant)
+	public Memento(String state)
 	{
-		this._participants.Add(participant.GetName(), participant);
-	}
-
-	public void Send(string from, string to, string message)
-	{
-		if (this._participants.ContainsKey(to))
-		{
-			this._participants[to].Receive(from, message);
-		}
-		else
-		{
-			throw new ArgumentException("{0} not found", to);
-		}
+		this.State = state;
 	}
 }
 ```
 
-Colleague
+Originator
 ```cs
-public interface IParticipant
+class Originator
 {
-	string GetName();
-	void Send(string to, string message);
-	void Receive(string from, string message);
-}
-```
+	private String _state;
 
-ConcreteColleague
-```cs
-public class Participant : IParticipant
-{
-	private readonly string _name;
-	private readonly IChatRoom _chatRoom;
-
-	public Participant(string name, IChatRoom chatRoom)
+	public void SetState(String state)
 	{
-		this._name = name;
-		this._chatRoom = chatRoom;
-
-		this._chatRoom.RegisterParticipant(this);
-	}
-	public string GetName()
-	{
-		return this._name;
+		this._state = state;
+		Console.WriteLine($"State is set to {state}");
 	}
 
-	public void Send(string to, string message)
+	public Memento Save()
 	{
-		this._chatRoom.Send(this._name, to, message);
+		Console.WriteLine($"Saving state to Memento");
+		return new Memento(this._state);
 	}
 
-	public void Receive(string from, string message)
+	public void Restore(Memento m)
 	{
-		Console.WriteLine("{0} to {1}: {2}", from, this._name, message);
+		this._state = m.State;
+		Console.WriteLine($"State is restored from Memento: {_state}");
 	}
 }
 ```
 
-Usage
+CareTaker
 ```cs
-IChatRoom chatRoom = new ChatRoom();
+IList<Memento> mementoes = new List<Memento>();
 
-IParticipant einstein = new Participant("Einstein", chatRoom);
-IParticipant newton = new Participant("Newton", chatRoom);
-IParticipant galileo = new Participant("Galileo", chatRoom);
+Originator originator = new Originator();
+originator.SetState("State 1");
+originator.SetState("State 2");
+mementoes.Add(originator.Save()); // checkpoint 1
 
-newton.Send(galileo.GetName(), "I discoverd laws of motion");
-einstein.Send(newton.GetName(), "I discovered how gravity works");
+originator.SetState("State 3");
+mementoes.Add(originator.Save()); // checkpoint 2
+
+originator.SetState("State 4");
+originator.Restore(mementoes[0]); // restore to checkpoint 1
+```
+
+Output
+```
+State is set to State 1
+State is set to State 2
+Saving state to Memento
+State is set to State 3
+Saving state to Memento
+State is set to State 4
+State is restored from Memento: State 2
 ```
