@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using BehavioralPatterns.Mediator;
+using BehavioralPatterns.Memento;
 
 namespace BehavioralPatterns
 {
@@ -11,7 +12,8 @@ namespace BehavioralPatterns
     {
         static void Main(string[] args)
         {
-            TestMediator.Run();
+            Caretaker.Run();
+            Console.ReadKey();
         }
     }
 }

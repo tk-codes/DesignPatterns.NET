@@ -4,7 +4,7 @@ Design Patterns in C# / .NET
 [![Build Status](https://travis-ci.org/tk-codes/DesignPatterns.NET.svg?branch=master)](https://travis-ci.org/tk-codes/DesignPatterns.NET)
 ![Language C#](https://img.shields.io/badge/language-c%23-blue.svg)
 ![status in progress](https://img.shields.io/badge/status-in%20progress-brightgreen.svg)
-![number of patterns](https://img.shields.io/badge/patterns-13-red.svg)
+![number of patterns](https://img.shields.io/badge/patterns-14-red.svg)
 
 ## Creational Patterns
 
@@ -38,7 +38,7 @@ Design Patterns in C# / .NET
 | | Interpreter
 | | Iterator
 |:heavy_check_mark: | [Mediator](/BehavioralPatterns/Mediator)|
-| | Memento
+|:heavy_check_mark:| [Memento](/BehavioralPatterns/Memento)|
 | :heavy_check_mark: | [Null Object](/BehavioralPatterns/NullObject) |
 | :heavy_check_mark:| [Observer](/BehavioralPatterns/Observer/) |
 | | State | :warning:
@@ -51,3 +51,4 @@ Design Patterns in C# / .NET
 * MSDN - [Patterns & Practices](https://msdn.microsoft.com/en-us/library/ff921345.aspx)
 * dotFactory - http://www.dofactory.com/net/design-patterns
 * Wikipedia - https://en.wikipedia.org/wiki/Software_design_pattern
+* Refactoring.Guru - https://refactoring.guru/design-patterns

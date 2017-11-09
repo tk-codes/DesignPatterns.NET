@@ -46,6 +46,9 @@
     <Compile Include="Mediator\ParticipantColleague.cs" />
     <Compile Include="Mediator\ChatRoomMediator.cs" />
     <Compile Include="Mediator\TestMediator.cs" />
+    <Compile Include="Memento\Caretaker.cs" />
+    <Compile Include="Memento\Memento.cs" />
+    <Compile Include="Memento\Originator.cs" />
     <Compile Include="NullObject\ConsoleLog.cs" />
     <Compile Include="NullObject\ILog.cs" />
     <Compile Include="NullObject\NullLog.cs" />
@@ -70,6 +73,7 @@
     <None Include="doc\Strategy.cd" />
     <None Include="doc\TemplateMethod.cd" />
     <None Include="Mediator\README.md" />
+    <None Include="Memento\README.md" />
     <None Include="NullObject\README.md" />
     <None Include="Observer\README.md" />
     <None Include="Strategy\README.md" />
