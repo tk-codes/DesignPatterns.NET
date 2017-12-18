@@ -22,7 +22,7 @@ Design Patterns in C# / .NET
 | | Pattern | 
 |---|--- | 
 |:heavy_check_mark:| [Adapter](/StructuralPatterns/Adapter) | 
-| | Bridge | [Bridge](/StructuralPatterns/Bridge) |
+| | [Bridge](/StructuralPatterns/Bridge) |
 |:heavy_check_mark: | [Composite](/StructuralPatterns/Composite) | 
 |:heavy_check_mark:| [Decorator](/StructuralPatterns/Decorator) | 
 |:heavy_check_mark:| [Facade](/StructuralPatterns/Facade) | 

@@ -25,9 +25,20 @@ This enables to configure an `Abstraction`(Interface) with an `Implementor`(Inte
 
 ## Benefits
 
+* Decouples an implementation so that it is not bound permanently to an interface.
+* Abstraction and implementation can be extended independently.
+* Changes to the concrete abstraction classes don't affect the client.
+* Allows building platform independent code
+* Hides the implementation details from client
 
 ## Drawbacks
 
+* Increases overall code complexity by creating multiple additional classes.
+
+## Known Uses
+
+* Useful in graphic and windowing systems that need to run over multiple platforms
+* Useful any time you need to vary an interface and an implementation in different ways
 
 ## Common Structure
 
@@ -43,7 +54,11 @@ This enables to configure an `Abstraction`(Interface) with an `Implementor`(Inte
 * ConcreteImplementor
   * implements the `Implementor` interface.
 
-_[Source: http://www.dofactory.com/net/memento-design-pattern]_
-
 ## Example
+
+// TODO
+
+## Comparison with other patterns
+
+* **Adapter** makes the unrelated classes work together. Adapter makes things work after they're designed; Bridge is designed beforehand to let the abstraction and implmentation vary independently. *[GoF, p219]*
 
