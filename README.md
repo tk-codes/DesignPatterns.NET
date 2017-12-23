@@ -11,7 +11,7 @@ Design Patterns in C# / .NET
 | | Pattern |
 | ---|--- | 
 |:heavy_check_mark: | [Abstract Factory](/CreationalPatterns/AbstractFactory/)|
-| | Builder|
+|| [Builder](/CreationalPatterns/Builder)|
 |:heavy_check_mark: | [Factory Method](/CreationalPatterns/FactoryMethod/) |
 | | Lazy Initialization
 |:heavy_check_mark: | [Prototype](/CreationalPatterns/Prototype) |

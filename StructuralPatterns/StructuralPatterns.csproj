@@ -47,6 +47,9 @@
     <Compile Include="Adapter\TestAdapter.cs" />
     <Compile Include="Adapter\TurkeyObjectAdapter.cs" />
     <Compile Include="Adapter\TurkeyClassAdapter.cs" />
+    <Compile Include="Bridge\BasicRemote.cs" />
+    <Compile Include="Bridge\IDevice.cs" />
+    <Compile Include="Bridge\IRemote.cs" />
     <Compile Include="Composite\FileSystem.cs" />
     <Compile Include="Composite\TestComposite.cs" />
     <Compile Include="Program.cs" />
@@ -55,6 +58,7 @@
   <ItemGroup>
     <None Include="Adapter\README.md" />
     <None Include="App.config" />
+    <None Include="Bridge\README.md" />
     <None Include="Composite\README.md" />
     <None Include="Decorator\README.md" />
     <None Include="doc\Adapter.cd" />
