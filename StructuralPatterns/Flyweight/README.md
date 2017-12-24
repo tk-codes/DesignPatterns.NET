@@ -9,6 +9,11 @@ Use sharing to support large numbers of objects efficiently and to save RAM.
 
 When representing large text documents, for example, creating an object for each character in the document would result in a huge amount of objects that couldn't be processed efficiently.
 
+For instance, every tree object has a copy of all the other dependent objects.
+
+![Problem Flyweight](img/flyweight-trees.png)
+*Source: GameProgrammingPatterns.com*
+
 ## Solution
 
 Define `Flyweight` objects that
@@ -20,6 +25,9 @@ Define `Flyweight` objects that
 
 This enables clients to reuse / share Flyweight objects (instead of creating a new object each time) and pass in extrinsic state when they invoke a Flyweight operation.
 This greatly reduces the number of physically created objects.
+
+![Solution Flyweight](img/flyweight-tree-model.png)
+*Source: GameProgrammingPatterns.com*
 
 ## Common Structure
 
@@ -44,6 +52,7 @@ This greatly reduces the number of physically created objects.
 ## Benefits
 
 * Saves RAM, thus allowing a program to support much more objects.
+* Don't repeat yourself (DRY) on data
 
 ## Drawbacks
 
