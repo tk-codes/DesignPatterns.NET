@@ -10,10 +10,9 @@ Design Patterns in C# / .NET
 
 | | Pattern |
 | ---|--- | 
+|:heavy_check_mark: | [Factory Method](/CreationalPatterns/FactoryMethod/) |
 |:heavy_check_mark: | [Abstract Factory](/CreationalPatterns/AbstractFactory/)|
 || [Builder](/CreationalPatterns/Builder)|
-|:heavy_check_mark: | [Factory Method](/CreationalPatterns/FactoryMethod/) |
-| | Lazy Initialization
 |:heavy_check_mark: | [Prototype](/CreationalPatterns/Prototype) |
 |:heavy_check_mark: | [Singleton](/CreationalPatterns/Singleton/) |
 
@@ -26,7 +25,7 @@ Design Patterns in C# / .NET
 |:heavy_check_mark: | [Composite](/StructuralPatterns/Composite) | 
 |:heavy_check_mark:| [Decorator](/StructuralPatterns/Decorator) | 
 |:heavy_check_mark:| [Facade](/StructuralPatterns/Facade) | 
-| | Flyweight |
+| | [Flyweight](/StructuralPatterns/Flyweight) |
 | | Proxy |
 
 ## Behavioral Patterns
