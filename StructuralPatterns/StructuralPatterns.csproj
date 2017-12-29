@@ -65,6 +65,7 @@
     <None Include="doc\Composite.cd" />
     <None Include="Facade\README.md" />
     <None Include="Flyweight\README.md" />
+    <None Include="Proxy\README.md" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

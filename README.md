@@ -26,7 +26,7 @@ Design Patterns in C# / .NET
 |:heavy_check_mark:| [Decorator](/StructuralPatterns/Decorator) | 
 |:heavy_check_mark:| [Facade](/StructuralPatterns/Facade) | 
 | | [Flyweight](/StructuralPatterns/Flyweight) |
-| | Proxy |
+| | [Proxy](/StructuralPatterns/Proxy) |
 
 ## Behavioral Patterns
 
@@ -46,6 +46,7 @@ Design Patterns in C# / .NET
 | | Visitor
 
 ### References
+* Design Patterns, Elements of Reusable Object-Oriented Software (GoF)
 * HeadFirst Design Patterns
 * MSDN - [Patterns & Practices](https://msdn.microsoft.com/en-us/library/ff921345.aspx)
 * dotFactory - http://www.dofactory.com/net/design-patterns
