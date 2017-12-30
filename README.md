@@ -32,7 +32,7 @@ Design Patterns in C# / .NET
 
 | | Pattern |
 | ---|--- |
-| | Chain of responsibility
+| | [Chain of responsibility](/BehavioralPatterns/ChainOfResponsibility)
 | | Command |
 | | Interpreter
 | | Iterator
