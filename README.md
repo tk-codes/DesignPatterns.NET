@@ -33,7 +33,7 @@ Design Patterns in C# / .NET
 | | Pattern |
 | ---|--- |
 | | [Chain of responsibility](/BehavioralPatterns/ChainOfResponsibility)
-| | Command |
+| | [Command](/BehavioralPatterns/Command) |
 | | Interpreter
 | | Iterator
 |:heavy_check_mark: | [Mediator](/BehavioralPatterns/Mediator)|
