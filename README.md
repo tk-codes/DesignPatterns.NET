@@ -40,7 +40,7 @@ Design Patterns in C# / .NET
 |:heavy_check_mark:| [Memento](/BehavioralPatterns/Memento)|
 | :heavy_check_mark: | [Null Object](/BehavioralPatterns/NullObject) |
 | :heavy_check_mark:| [Observer](/BehavioralPatterns/Observer/) |
-| | State | :warning:
+| | [State](/BehavioralPatterns/State)
 |:heavy_check_mark: | [Strategy](/BehavioralPatterns/Strategy/) |
 |:heavy_check_mark: | [Template Method](/BehavioralPatterns/TemplateMethod) |
 | | Visitor
