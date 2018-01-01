@@ -34,7 +34,7 @@ Encapsulate a request as a stand-alone object, which can be used to
 ## Collaboration
 
 ![Collaboration of CoR pattern](img/collaboration.gif)
-*Source: http://www.cs.mcgill.ca*
+*Source: GoF Design Patterns*
 
 * When commands are undoable, ConcreteCommand stores state for undoing the command prior to invoking `Execute`.
 
