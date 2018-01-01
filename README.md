@@ -35,7 +35,7 @@ Design Patterns in C# / .NET
 | | [Chain of responsibility](/BehavioralPatterns/ChainOfResponsibility)
 | | [Command](/BehavioralPatterns/Command) |
 | | [Interpreter](/BehavioralPatterns/Interpreter)
-| | Iterator
+| | [Iterator](/BehavioralPatterns/Iterator)
 |:heavy_check_mark: | [Mediator](/BehavioralPatterns/Mediator)|
 |:heavy_check_mark:| [Memento](/BehavioralPatterns/Memento)|
 | :heavy_check_mark: | [Null Object](/BehavioralPatterns/NullObject) |
