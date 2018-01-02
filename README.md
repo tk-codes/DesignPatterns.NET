@@ -43,7 +43,7 @@ Design Patterns in C# / .NET
 | | [State](/BehavioralPatterns/State)
 |:heavy_check_mark: | [Strategy](/BehavioralPatterns/Strategy/) |
 |:heavy_check_mark: | [Template Method](/BehavioralPatterns/TemplateMethod) |
-| | Visitor
+| | [Visitor](/BehavioralPatterns/Visitor)
 
 ### References
 * Design Patterns, Elements of Reusable Object-Oriented Software (GoF)
