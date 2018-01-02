@@ -2,37 +2,29 @@
 
 The Factory Method Pattern defines an interface for creating an object, but lets subclasses decide which class to instantiate.
 
-A factory method
-* handles object creation and
-* encapsulates it in a subclass.
-
 ## Problem
 
-* Object should be created so that subclasses can redefine which class to instantiate.
-* A class should defer instantiation to subclasses.
+* You should create a particular object (e.g. AmericanCheesePizza or ItalianVeggiePizza) depending on the type. 
+* Creating a new object using `new` keyword and `if-else` conditionals in every place where you need is very inflexible. 
 
 ## Solution
 
-* Define a separate operation `factory method` for creating object.
-* Create an object by calling a factory method.
+* Define a separate operation `factory method` in the Creator/Factory class (e.g. AmericanPizzaFactory)
+* Move the constructor call (`new AmericanCheesePizza()`) inside the factory method.
 
 **Definition**
 ```cs
         // A facotry method
         //    1. is abstract so the subclass are counted on to handle object creation.
         //    2. returns a Product.
-        //    3. isolates the client from knowing what of concrete Product is actually created.
+        //    3. isolates the client from knowing which concrete Product is actually created.
         //    4. may be parameterized (or not) to select among several variations of a product.
         protected abstract Pizza CreatePizza(PizzaType type);
 ```
 
-## Benefits
-
-## Drawbacks
-
 ## Common Structure
 
-![Common structure of factory method pattern](http://www.dofactory.com/images/diagrams/net/factory.gif)
+![Common structure of factory method pattern](img/factory.gif)
 
 * Product (Pizza)
   * defines the interface of objects the factory method creates
@@ -44,7 +36,22 @@ A factory method
 * ConcreteCreator(AmericanPizzaStore)
   * overrides the abstract factory method to return an instance of a ConcreteProduct (eg. AmericanCheesePizza)
 
-_[Source: http://www.dofactory.com/net/factory-method-design-pattern]_
+## Collaborations
+
+![Collaboration](img/collaboration.PNG)
+*Source: static.dzone.com*
+
+* Creator/Factory relies on its subclasses to implement the factory method so that it returns an instance of the appropriate ConcreteProduct.
+
+## Benefits
+
+* Avoids tight coupling between concrete products and code that uses them.
+* Simplifies code due to moving all creational code to one place.
+* Simplifies adding new products to the program.
+
+## Drawbacks
+
+* Requires extra subclasses.
 
 ## Example Usage
 
@@ -60,3 +67,11 @@ _[Source: http://www.dofactory.com/net/factory-method-design-pattern]_
             Pizza pizza = italianStore.OrderPizza(PizzaType.Cheese);
             Console.WriteLine("Esposito ordered a " + pizza.Name);
 ```
+
+## Relations with Other Patterns
+
+* **Abstract Factory** is often implemented with Factory Methods. 
+
+* **Templated Methods** - Factory methods are usually called within Template Methods.
+
+* **Prototype** doesn't require subclassing, but it does require an `initialize()` operation. On the other hand, Factory Method requires subclassing, but doesn't require initialization step.
