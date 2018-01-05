@@ -18,18 +18,6 @@ This makes the objects *loosely coupled*.
 
 The Mediator is commonly used to coordinate related GUI components.
 
-## Benefits
-
-* Colleagues classes may become more reusable and are decoupled from the system.
-* Simplifies maintenance of the system by centralizing control logic.
-* Simplifies and reduces the variety of messages sent between objects in the system.
-
-## Drawbacks
-
-* Without proper design, the mediator object can become overly complex.
-* Single point of failure
-* Hard to test --> Objects should be mocked
-
 ## Common Structure
 
 ![Common structure of mediator pattern](https://upload.wikimedia.org/wikipedia/commons/9/92/W3sDesign_Mediator_Design_Pattern_UML.jpg)
@@ -45,7 +33,21 @@ The Mediator is commonly used to coordinate related GUI components.
   * each colleague knows its Mediator object
   * each colleague communicates with its mediator whenever it would have otherwise communicated with another colleague.
 
-_[Source: http://www.dofactory.com/net/mediator-design-pattern]_
+## Collaboration
+
+Colleagues send and receive requests from a Mediator object. The mediator implements the cooperative behavior by routing request between the appropriate colleagues.
+
+## Benefits
+
+* Colleagues classes may become more reusable and are decoupled from the system.
+* Simplifies maintenance of the system by centralizing control logic.
+* Simplifies and reduces the variety of messages sent between objects in the system.
+
+## Drawbacks
+
+* Without proper design, the mediator object can become overly complex.
+* Single point of failure
+* Hard to test --> Objects should be mocked
 
 ## Example
 
@@ -137,3 +139,9 @@ IParticipant galileo = new Participant("Galileo", chatRoom);
 newton.Send(galileo.GetName(), "I discoverd laws of motion");
 einstein.Send(newton.GetName(), "I discovered how gravity works");
 ```
+
+## Relations with Other Patterns
+
+- **Facade** differs from Mediator in that it abstracts a subsystem of objects to provide a more convenient interface. Its protocol is uni-directional (From Facade to subsystem but not vice-versa). In contrast, Mediator enables cooperative behavior that colleague objects don't or can't provide, and the protocol is multi-directional.
+
+- **Observer** - Colleagues can communicate with the mediator using the Observer pattern.
