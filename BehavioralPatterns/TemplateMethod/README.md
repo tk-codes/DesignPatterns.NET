@@ -20,6 +20,20 @@ The Template Method pattern suggests to break down an alogirthm into a series of
 
 The **template method** controls how subclasses redefine a behavior. This is also referred to as *inversion of control* because subclasses do no longer control how the behavior of a parent class redefined.
 
+## Common Structure
+
+![Common structure of template method pattern](https://upload.wikimedia.org/wikipedia/commons/2/2a/W3sDesign_Template_Method_Design_Pattern_UML.jpg)
+
+* AbstractClass (CaffeineBeverage)
+  * defines abstract primitive operations that concrete subclasses define to implement steps of an algorithm
+  * implements a template method defining the skeleton of an algorithm. The template method calls primitive operations as well as operations defined in AbstractClass or those of other objects.
+* ConcreteClass (Tea, Coffee)
+  * implements the primitive operations ot carry out subclass-specific steps of the algorithm
+
+## Collaborations
+
+* ConcreteClass relies on AbstractClass to implement the invariant steps of the algorithm.
+
 ## Benefits
 
 * Helps to eliminate code duplication
@@ -34,17 +48,7 @@ The **template method** controls how subclasses redefine a behavior. This is als
 * When subclasses should be able to extend the base algorithm without altering its structure.
 * When you have several classes that do similar things with only minor differences. When you alter one of the classes, you have to change others as well (e.g. HTML/PDF/CSV Generator follows the same data processing steps before generating the specific file format).
 
-## Common Structure
-
-![Common structure of template method pattern](https://upload.wikimedia.org/wikipedia/commons/2/2a/W3sDesign_Template_Method_Design_Pattern_UML.jpg)
-
-* AbstractClass (CaffeineBeverage)
-  * defines abstract primitive operations that concrete subclasses define to implement steps of an algorithm
-  * implements a template method defining the skeleton of an algorithm. The template method calls primitive operations as well as operations defined in AbstractClass or those of other objects.
-* ConcreteClass (Tea, Coffee)
-  * implements the primitive operations ot carry out subclass-specific steps of the algorithm
-
-_[Source: http://www.dofactory.com/net/template-method-design-pattern]_
+## Example
 
 **Definition**
 
@@ -113,6 +117,6 @@ public class Tea : CaffeineBeverage
 
 ## Comparison with other patterns
 
-* **Factory Method**
+* **Factory Method** are often called by TemplateMethod.
 
-* **Strategy**
+* **Strategy** - Template methods use inheritance to vary part of an algorithm. Strategies use delegation to vary the entire algorithm.

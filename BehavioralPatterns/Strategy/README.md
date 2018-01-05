@@ -36,7 +36,15 @@ Strategy lets the algorithm vary independently from clients that use it.
 
 ## Benefits
 
+* Families of related algorithms
+  * Inheritance can help factor out common functionality of the algorithm
+* Lets you vary the algorithm independently of its context, making it easier to understand, extend and switch algorithms at run-time.
+* Eliminate conditional statements for selecting desired behavior.
+
 ## Drawbacks
+
+* Increases overall code complexity by creating multiple additional classes.
+* Client must be aware of the differences between strategies to pick a proper one.
 
 ## Example
 
@@ -56,3 +64,5 @@ model.PerformFly();
 ```
 
 ## Relations with Other Patterns
+
+- **Flyweight** - Strategy objects often make good flyweights.
