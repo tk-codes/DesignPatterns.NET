@@ -11,19 +11,36 @@ Prototype pattern refers to creating duplicate object while keeping performance 
 * Make new instances by copying existing instances (`clone`)
 * De-serialize when you need deep copies
 
+## Common Structure
+
+![Common structure of prototype pattern](img/structure.gif)
+
+* Prototype (Shape)
+  * declares an interface for cloning itself
+* ConcretePrototype (Circle, Square)
+  * implements an operation for cloning itself
+* Client (ShapeManager)
+  * creates a new object by asking a prototype to clone itself.
+
+Questions:
+1. Should clonable interface be implemented?
+2. What return type (Super class or concrete class) should the clone method have?
+
+## Collaborations
+
+A client asks a prototype to clone itself.
+
 ## Benefits
 
+* Adding and removing objects (clones of ConcretePrototype) at run-time.
 * Hides the complexities of making new instances from the client.
-* Provides the option for the client to generate objects whose type is not known.
+* Specifying new objects by varying values.
+  * Highly dynamic systems let you define new behavior through object composition - by specifying values for an object's variables.
 * In some circumstances, copying an object can be more efficient than creating a new object.
 
 ## Drawbacks
 
 * Making a copy of an object can sometimes be complicated and error-prone. 
-
-Questions:
-1. Should clonable interface be implemented?
-2. What return type (Super class or concrete class) should the clone method have?
 
 **Definition**
 ```cs
@@ -108,15 +125,8 @@ Shape: 1 - Circle@12289376
 Shape: 2 - Square@43495525
 ```
 
-## Common Structure
+## Relations with Other Patterns
 
-![Common structure of prototype pattern](http://www.dofactory.com/images/diagrams/net/prototype.gif)
+* **AbstractFactory** and Prototype are competing patterns. However, they can be used together as well. An AbstractFactory might store a set of prototypes from which to clone and return product objects.
 
-* Prototype (Shape)
-  * declares an interface for cloning itself
-* ConcretePrototype (Circle, Square)
-  * implements an operation for cloning itself
-* Client (ShapeManager)
-  * creates a new object by asking a prototype to clone itself.
-
-_[Source: http://www.dofactory.com/net/prototype-design-pattern]_
+* **Composite**, **Decorator** - Prototype would allow to clone complex structures, instead of re-structuring them from scratch.
