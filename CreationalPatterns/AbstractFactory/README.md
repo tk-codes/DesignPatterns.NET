@@ -14,17 +14,6 @@ The Abstract Factory Pattern provides an interface for creating families of rela
 * Encapsulate object creation in a separate (factory) object. That is, define an interface (AbstractFactory) for creating objects, and implement the interface.
 * A class delegates object creation to a factory object instead of creating objects directly.
 
-## Benefits
-
-* Follows the Open/Close Principle.
-* Allows building families of product objects and guarantees their compatibility.
-* Avoids tight coupling between concrete products and code that uses them.
-* Divides responsibilities between multiple classes.
-
-## Drawbacks
-
-* Increases overall code complexity by creating multiple additional classes.
-
 ## Common Structure
 
 ![Common structure of abstract factoring pattern](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Abstract_factory_UML.svg/677px-Abstract_factory_UML.svg.png)
@@ -39,7 +28,25 @@ The Abstract Factory Pattern provides an interface for creating families of rela
   * defines a product object to be created by the corresponding concrete factory
   * implements the AbstractProduct interface
 
-_[Source: http://www.dofactory.com/net/abstract-factory-design-pattern]_
+## Collaboration
+
+TODO - Add sequence diagram
+
+* Normally a single instance of a ConcreteFactory class is created at runtime.
+
+## Benefits
+
+* Avoids tight coupling between concrete products and code that uses them.
+* Allows building families of product objects and guarantees their compatibility and consistency.
+* Divides responsibilities between multiple classes.
+
+## Drawbacks
+
+* Increases overall code complexity by creating multiple additional classes.
+* Supporting new kinds of products is difficult.
+  * It requires extending the AbstractFactory interface, which involves changing all of its subclasses.
+
+## Example
 
 **Definition** - AbstractFactory and ConcreteFactory
 ```cs
@@ -113,3 +120,9 @@ _[Source: http://www.dofactory.com/net/abstract-factory-design-pattern]_
         }
     }
 ```
+
+## Relations with Other Patterns
+
+* **Factory Method** - AbstractFactory classes are often implemented with factory methods, but they can also be implemented using **Prototype**.
+
+* **Singleton** - A concrete factory is often a singleton.

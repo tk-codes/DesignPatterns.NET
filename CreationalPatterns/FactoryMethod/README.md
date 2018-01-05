@@ -9,7 +9,7 @@ The Factory Method Pattern defines an interface for creating an object, but lets
 
 ## Solution
 
-* Define a separate operation `factory method` in the Creator/Factory class (e.g. AmericanPizzaFactory)
+* Define a separate operation `factory method` in the Creator class (e.g. CreatePizza() method in the AmericanPizzaStore class)
 * Move the constructor call (`new AmericanCheesePizza()`) inside the factory method.
 
 **Definition**
