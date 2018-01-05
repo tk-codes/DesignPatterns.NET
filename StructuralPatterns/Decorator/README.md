@@ -13,6 +13,23 @@ Define `Decorator` objects that
 * implement the interface of the extended (decorated) object (`Component`) transparently by forwarding all requests to it and 
 * perform additional functionality before/after forwarding a request.
 
+## Common Structure
+
+![Common structure of decorator pattern](img/structure.jpg)
+
+* Component (Cake)
+  * defines the interface for objects that can have responsibilities added to them dynamically.
+* ConcreteComponent (MuffinCake)
+  * defines an object to which additional responsibilities can be attached.
+* Decorator (CakeDecorator)
+  * maintains a reference to a Component object and defines an interface that conforms to Component's interface.
+* ConcreteDecorator (WhippedCream)
+  * adds responsibilities to the component.
+
+## Collaboration
+
+Decorator forwards requests to its Component object. It may optionally perform additional operations before and after forwarding the request.
+
 ## Benefits
 
 * provide a flexible alternative to subclassing for extending functionality.
@@ -22,6 +39,10 @@ Define `Decorator` objects that
 
 * can result in many small objects and overuse can be complex.
 * can cause issues if the client relies heavily on the components concrete type.
+* A decorator and its component aren't identical.
+  * A decorator acts a transparant enclosure. From an object identity point of view, a decorated component is not identical to the component itself. Hence you shouldn't rely on object identity when you use decorators.
+
+## Example
 
 See complete [Cake Factory](https://gitlab.com/tk-bachelor/se1-testat3-decorator) with Decorator Pattern in Java
 
@@ -141,17 +162,8 @@ assertEquals("muffin cake description",
 assertEquals(cake.getDescription(), 34, cake.cost(), 0);
 ```
 
-## Common Structure
+## Relations with Other Patterns
 
-![Common structure of decorator pattern](http://www.dofactory.com/images/diagrams/net/decorator.gif)
-
-* Component (Cake)
-  * defines the interface for objects that can have responsibilities added to them dynamically.
-* ConcreteComponent (MuffinCake)
-  * defines an object to which additional responsibilities can be attached.
-* Decorator (CakeDecorator)
-  * maintains a reference to a Component object and defines an interface that conforms to Component's interface.
-* ConcreteDecorator (WhippedCream)
-  * adds responsibilities to the component.
-
-_[Source: http://www.dofactory.com/net/decorator-design-pattern]_
+* **Adapter**: A decorator is different from an adapter in that a decorator only changes an object's responsibilities, not its interface; an adapter will give an object a completely new interface.
+* **Composite**: A decorator can be viewed as a degenerate composite with **only one component**. However, a decorator adds additional responsibilities - it isn't intended for object aggregation.
+* **Strategy**: A decorator lets you change the skin of an object; a strategy lets you change the guts. These are two alternative ways of changing an object.
