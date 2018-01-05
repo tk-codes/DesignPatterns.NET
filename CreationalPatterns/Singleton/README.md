@@ -2,9 +2,50 @@
 
 Ensure a class has only one instance, and provide a global point of access to it.
 
+## Problem
+
+* How can it be ensured that a class has only one instance?
+* How can the sole instance of a class be accessed easily?
+* How can a class control its instantion?
+* How can the number of instances of a class be restricted?
+
+## Solution
+
+* Hide the constructor of the class
+* Define a public static operation `getInstance()` that returns the sole instance of the class.
+
+## Common Structure
+
+![Structure](img/structure.png)
+
+* Singleton
+  * declares static method `getInstance` that should return the same instance of `Singleton` class.
+  * may be responsible for creating its own unique instance.
+
+## Collaboration
+
+* Clients access a Singleton instance solely through static `getInstance()` method.
+
+## Benefits
+
+* Ensures that class has only a single instance.
+* Provides global access point to that instance.
+* Allows deferred initialization
+
+## Drawbacks
+
+* Violate single responsibility principle
+    * They control their own creation and lifecycle.
+* instance is tightly coupled to Singleton class => Difficult to test
+* Requires special treatment in a multithreaded environment.
+
+## Example
+
+There are two ways to implement singleton.
+
 ![ChocolateBoiler as Singleton](/Diagrams/Singleton.png)
 
-## Static Initialization
+### Static Initialization
 
 :thumbsup: **You may want to create your Singleton eagerly**, if
 * your application always creates and uses an instance of the `Singleton`
@@ -34,7 +75,7 @@ The class is marked as **sealed** to prevent derivation, which could add instanc
 
 Because the **Singleton** instance is referenced by a private static member variable, the instantiation does not occur until the class is first referenced by a call to the **Instance** property. This solution therefore implements a form of the lazy instantiation property, as in the Design Patterns form of Singleton.
 
-## Multithreaded Singleton
+### Multithreaded Singleton
 
 :thumbsup: **Use double-checked locking**, if
 * you want to keep separate threads from creating new instances of the singleton at the same time (thread-safe)
@@ -74,6 +115,11 @@ The singleton instance is declared to be **volatile** to ensure that assignment 
 Lastly, this approach uses a **syncRoot** instance to lock on, rather than locking on the type itself, to avoid deadlocks.
 
 This double-checked locking approach solves the thread concurrency problems while avoiding an exclusive lock in every call to the instance propery method. It also allows you to delay instantiation until the object is first accessed.
+
+## Relations with Other Patterns
+
+* **AbstractFactory*, **Builder**, **Prototype**  - These patterns can be implemented using the Singleton pattern
+* **Flyweight** - There should be only one Singleton instance, whereas Flyweight class can have multiple instances with a different intrinsic state. Whatsmore, Singleton object can be mutable but Flyweight objects are immutable.
 
 Reference: 
 * MSDN - [Implementing Singleton in C#](https://msdn.microsoft.com/en-us/library/ff650316.aspx)
