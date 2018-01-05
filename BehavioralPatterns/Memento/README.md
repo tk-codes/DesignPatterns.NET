@@ -17,18 +17,6 @@ Only the originator that created a memento is allowed to access it.
 
 A client (caretaker) can request a memento from the originator to save the internal state. It can also pass a memento back to the originator to restore to a previous state.
 
-## Benefits
-
-* Does not violate the originator's encapsulation.
-* Keeping the saved state external from the originator helps to maintain cohesion.
-* Provides easy-to-implement recovery capability.
-
-## Drawbacks
-
-* Saving and restoring state can be time consuming.
-* It may require lots of memory if clients create mementors too often.
-* Clients should track the originator's lifecycle in order to destroy obsolete mementos.
-
 ## Common Structure
 
 ![Common structure of memento pattern](https://upload.wikimedia.org/wikipedia/commons/3/38/W3sDesign_Memento_Design_Pattern_UML.jpg)
@@ -44,7 +32,21 @@ A client (caretaker) can request a memento from the originator to save the inter
   * never operates on or examines the contents of a memento
   * When originator has to go back in history, the caretaker passes the last memento to the originator's restoration method.
 
-_[Source: http://www.dofactory.com/net/memento-design-pattern]_
+## Collaboration
+
+* Mementos are passive. Only the originator that created a memento will assign or retrieve its state.
+
+## Benefits
+
+* Does not violate the originator's encapsulation.
+* Keeping the saved state external from the originator helps to maintain cohesion.
+* Provides easy-to-implement recovery capability.
+
+## Drawbacks
+
+* Saving and restoring state can be time consuming.
+* It may require lots of memory if clients create mementors too often.
+* Clients should track the originator's lifecycle in order to destroy obsolete mementos.
 
 ## Example
 
@@ -114,3 +116,9 @@ Saving state to Memento
 State is set to State 4
 State is restored from Memento: State 2
 ```
+
+## Relations with Other Patterns
+
+- **Command** can use Mementos to maintain state for undoable operations.
+
+- **Iterator** - Mementos can be used for iteration as described earlier.
