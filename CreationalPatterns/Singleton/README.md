@@ -118,7 +118,7 @@ This double-checked locking approach solves the thread concurrency problems whil
 
 ## Relations with Other Patterns
 
-* **AbstractFactory*, **Builder**, **Prototype**  - These patterns can be implemented using the Singleton pattern
+* **AbstractFactory**, **Builder**, **Prototype**  - These patterns can be implemented using the Singleton pattern
 * **Flyweight** - There should be only one Singleton instance, whereas Flyweight class can have multiple instances with a different intrinsic state. Whatsmore, Singleton object can be mutable but Flyweight objects are immutable.
 
 Reference: 

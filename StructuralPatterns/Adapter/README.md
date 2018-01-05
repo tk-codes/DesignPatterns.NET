@@ -11,17 +11,42 @@
 
 Write a `Adapter` class that adapts the new vendor interface into the one you're expecting. The adapter acts as the middleman by receiving requests from the client and converting them into requests that make sense on the vendor class.
 
-## Benefits
+## Common Structure
+
+There are two variations, namely **Object Adapter** and **Class Adapter**.
+
+![Common structure of adapter pattern](https://upload.wikimedia.org/wikipedia/commons/e/e5/W3sDesign_Adapter_Design_Pattern_UML.jpg)
+
+* Target (Duck)
+  * defines the domain-specific interface that client uses.
+* Adapter (TurkeyClassAdapter, TurkeyObjectAdapter)
+  * adapts the interface Adaptee to the Target interface.
+* Adaptee (Turkey)
+  * defines an existing interface that needs adapting.
+* Client
+  * collaborates with objects conforming to the Target interface.
+
+_[Source: http://www.dofactory.com/net/adapter-design-pattern]_
+
+## Collaboration
+
+Clients call operations on an Adapter instance. In turn, the adapter callas Adaptee operations that carry out the request.
+
+## Consequences
+
+### Pattern in General
+
+**Benefits**
 
 * It allows more flexibility in design
 * They handle logic by wrapping a new interface around that of an exisiting class so you can use new APIs and avoid breaking existing implementations.
 * It absolutely interconnects two incompatible interfaces.
 
-## Drawbacks
+**Drawbacks**
 
 * Sometimes many adaptations are required along an adapter chain to reach the required type.
 
-## Class Adapter (eg. `Stack<E> extends Vector<E>`)
+### Class Adapter (eg. `Stack<E> extends Vector<E>`)
 
 **Benefits**
 
@@ -33,7 +58,7 @@ Write a `Adapter` class that adapts the new vendor interface into the one you're
 * The whole interface of the existing class is visible
 * Not able to adapt all the subclasses of the existing class at one go. You have to define explicitely which (sub-)class you adapt.
 
-## Object Adapter
+### Object Adapter
 
 **Benefits**
 
@@ -147,18 +172,10 @@ static void testDuck(IDuck duck)
 	duck.Fly();
 }
 ```
+## Relations with Other Patterns
 
-## Common Structure
+* **Bridge** has a structure similar to an object adapter, but Bridge has a different intent. It is meant to separate an interface from its implementation so that they can be variaed easily and independently. An adapter is meant to change the interface of an *existing* object.
 
-![Common structure of adapter pattern](https://upload.wikimedia.org/wikipedia/commons/e/e5/W3sDesign_Adapter_Design_Pattern_UML.jpg)
+* **Decorator** enhances another object without changing its interface. A decorator is thus more transparent to the application than an adapter is. As a consequence, Decorator supports recursive composition, which isn't possible with pure adapters.
 
-* Target (Duck)
-  * defines the domain-specific interface that client uses.
-* Adapter (TurkeyClassAdapter, TurkeyObjectAdapter)
-  * adapts the interface Adaptee to the Target interface.
-* Adaptee (Turkey)
-  * defines an existing interface that needs adapting.
-* Client
-  * collaborates with objects conforming to the Target interface.
-
-_[Source: http://www.dofactory.com/net/adapter-design-pattern]_
+* **Proxy** defines a representative or surrogate for another object and does not change its interface.
