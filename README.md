@@ -24,7 +24,7 @@ Design Patterns in C# / .NET
 | | [Bridge](/StructuralPatterns/Bridge) |
 |:heavy_check_mark: | [Composite](/StructuralPatterns/Composite) | 
 |:heavy_check_mark:| [Decorator](/StructuralPatterns/Decorator) | 
-|:heavy_check_mark:| [Facade](/StructuralPatterns/Facade) | 
+| | [Facade](/StructuralPatterns/Facade) | 
 | | [Flyweight](/StructuralPatterns/Flyweight) |
 | | [Proxy](/StructuralPatterns/Proxy) |
 
