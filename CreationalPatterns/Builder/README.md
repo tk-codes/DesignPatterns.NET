@@ -19,7 +19,7 @@ Creating and assembling the parts of a complex object within a class is inflexib
 
 A class can delegate to different `Builder` objects to create different representations of a complex object.
 
-![Real world example](https://sourcemaking.com/files/v2/content/patterns/Builder_example1.svg)
+![Real world example](https://sourcemaking.com/files/v2/content/patterns/Builder_example1.png)
 
 *Source*: SourceMaking.com
 
@@ -67,9 +67,20 @@ A class can delegate to different `Builder` objects to create different represen
 
 ## Example
 
-**Definition**
+![PizzaBuilder](/Diagrams/Builder.png)
 
 **Usage**
+
+```cs
+        // Create a concrete builder
+        var americanPizzaBuilder = new AmericanPizzaBuilder();
+        
+        // Create a director
+        var waiter = new Waiter(americanPizzaBuilder);
+        
+        // Create a pizza
+        var pizza = waiter.CreatePizza("Spinach+Olives");
+```
 
 ## Comparison with other patterns
 

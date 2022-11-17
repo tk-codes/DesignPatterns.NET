@@ -4,17 +4,17 @@ Design Patterns in C# / .NET
 [![Build Status](https://travis-ci.org/tk-codes/DesignPatterns.NET.svg?branch=master)](https://travis-ci.org/tk-codes/DesignPatterns.NET)
 ![Language C#](https://img.shields.io/badge/language-c%23-blue.svg)
 ![status in progress](https://img.shields.io/badge/status-in%20progress-brightgreen.svg)
-![number of patterns](https://img.shields.io/badge/patterns-14-red.svg)
+![number of patterns](https://img.shields.io/badge/patterns-15-red.svg)
 
 ## Creational Patterns
 
-| | Pattern |
-| ---|--- | 
-|:heavy_check_mark: | [Factory Method](/CreationalPatterns/FactoryMethod/) |
-|:heavy_check_mark: | [Abstract Factory](/CreationalPatterns/AbstractFactory/)|
-|| [Builder](/CreationalPatterns/Builder)|
-|:heavy_check_mark: | [Prototype](/CreationalPatterns/Prototype) |
-|:heavy_check_mark: | [Singleton](/CreationalPatterns/Singleton/) |
+|                     | Pattern |
+|---------------------|--- | 
+| :heavy_check_mark:  | [Factory Method](/CreationalPatterns/FactoryMethod/) |
+| :heavy_check_mark:  | [Abstract Factory](/CreationalPatterns/AbstractFactory/)|
+| :heavy_check_mark:  | [Builder](/CreationalPatterns/Builder)|
+| :heavy_check_mark:  | [Prototype](/CreationalPatterns/Prototype) |
+| :heavy_check_mark:  | [Singleton](/CreationalPatterns/Singleton/) |
 
 ## Structural Patterns
 

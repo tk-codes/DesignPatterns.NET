@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CreationalPatterns.Builder.AmericanPizzaBuilder">
+    <Position X="9" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAQAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Builder\AmericanPizzaBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CreationalPatterns.Builder.ItalianPizzaBuilder">
+    <Position X="11.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAQAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Builder\ItalianPizzaBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CreationalPatterns.Builder.Pizza">
+    <Position X="6.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAEAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>Builder\Pizza.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CreationalPatterns.Builder.PizzaBuilder">
+    <Position X="10.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAQAAAAAIAAgAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Builder\PizzaBuilder.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="Pizza" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CreationalPatterns.Builder.Waiter">
+    <Position X="14.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Builder\Waiter.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_pizzaBuilder" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

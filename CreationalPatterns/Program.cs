@@ -11,7 +11,7 @@ namespace CreationalPatterns
     {
         static void Main(string[] args)
         {
-            Prototype.TestPrototype.Run();
+            Builder.TestBuilder.run();
         }
     }
 }
