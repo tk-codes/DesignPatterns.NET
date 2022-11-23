@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="StructuralPatterns.Bridge.NormalTv" BaseTypeListCollapsed="true">
+    <Position X="14.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAABAAAAAAAAQAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Bridge\NormalTV.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="StructuralPatterns.Bridge.PhysicalRemote" BaseTypeListCollapsed="true">
+    <Position X="9" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAABAAAAAAAAQAkAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Bridge\PhysicalRemote.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_device" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="StructuralPatterns.Bridge.SmartAppRemote" BaseTypeListCollapsed="true">
+    <Position X="9" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAABAAAAAAAAQAkAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Bridge\SmartAppRemote.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_device" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="StructuralPatterns.Bridge.SmartTv" BaseTypeListCollapsed="true">
+    <Position X="14.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAABAAAAAAAAQAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Bridge\SmartTV.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="StructuralPatterns.Bridge.IDevice">
+    <Position X="12" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAABAAAAAAAAQAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Bridge\IDevice.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="StructuralPatterns.Bridge.IRemote">
+    <Position X="6.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAABAAAAAAAAQAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Bridge\IRemote.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

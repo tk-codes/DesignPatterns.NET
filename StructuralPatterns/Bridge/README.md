@@ -9,7 +9,7 @@
 
 When using subclassing, different subclasses implement an abstract class in different ways (eg. `Shape <- Sqaure <- BlueSquare/RedSquare`). But an implementation is bound to the abstraction at compile-time and can't be changed at run-time.
 
-![Problem - Bridge Pattern](https://refactoring.guru/images/patterns/diagrams/bridge/problem.png)
+![Problem - Bridge Pattern](https://refactoring.guru/images/patterns/diagrams/bridge/problem-en.png)
 *Source: Refactoring.guru*
 
 ## Solution
@@ -21,7 +21,7 @@ The Bridge pattern attempts to solve it by replacing inheritance with delegation
 
 This enables to configure an `Abstraction`(Interface) with an `Implementor`(Interface) object at run-time.
 
-![Solution - Bridge Pattern](https://refactoring.guru/images/patterns/diagrams/bridge/solution.png)
+![Solution - Bridge Pattern](https://refactoring.guru/images/patterns/diagrams/bridge/solution-en.png)
 
 ## Benefits
 
@@ -42,7 +42,7 @@ This enables to configure an `Abstraction`(Interface) with an `Implementor`(Inte
 
 ## Common Structure
 
-![Common structure of bridge pattern](https://upload.wikimedia.org/wikipedia/commons/c/cf/Bridge_UML_class_diagram.svg)
+![Common structure of bridge pattern](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Bridge_UML_class_diagram.svg/500px-Bridge_UML_class_diagram.svg.png)
 
 * Abstraction
   * defines the abstraction's interface
@@ -56,7 +56,31 @@ This enables to configure an `Abstraction`(Interface) with an `Implementor`(Inte
 
 ## Example
 
-// TODO
+![Bridge](../../Diagrams/Bridge.png)
+
+**Usage**
+
+```csharp
+        // Abstraction-Implementation combination 1 =>  Smart TV + Physical Remote
+        var smartTv = new SmartTv();
+        var physicalRemote = new PhysicalRemote(smartTv);
+        physicalRemote.PowerOn();
+        physicalRemote.VolumeUp();
+        physicalRemote.PowerOff();
+        
+        // Abstraction-Implementation combination 2 =>  Smart TV + Smart App Remote
+        var smartAppRemote = new SmartAppRemote(smartTv);
+        smartAppRemote.PowerOn();
+        smartAppRemote.VolumeUp();
+        smartAppRemote.PowerOff();
+        
+        // Abstraction-Implementation combination 3 =>  Normal TV + Physical Remote
+        var normalTv = new NormalTv();
+        var physicalRemote2 = new PhysicalRemote(normalTv);
+        physicalRemote2.PowerOn();
+        physicalRemote2.VolumeUp();
+        physicalRemote2.PowerOff();
+```
 
 ## Comparison with other patterns
 

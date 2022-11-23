@@ -4,46 +4,46 @@ Design Patterns in C# / .NET
 [![Build Status](https://travis-ci.org/tk-codes/DesignPatterns.NET.svg?branch=master)](https://travis-ci.org/tk-codes/DesignPatterns.NET)
 ![Language C#](https://img.shields.io/badge/language-c%23-blue.svg)
 ![status in progress](https://img.shields.io/badge/status-in%20progress-brightgreen.svg)
-![number of patterns](https://img.shields.io/badge/patterns-15-red.svg)
+![number of patterns](https://img.shields.io/badge/patterns-16-red.svg)
 
 ## Creational Patterns
 
-|                     | Pattern |
-|---------------------|--- | 
-| :heavy_check_mark:  | [Factory Method](/CreationalPatterns/FactoryMethod/) |
-| :heavy_check_mark:  | [Abstract Factory](/CreationalPatterns/AbstractFactory/)|
-| :heavy_check_mark:  | [Builder](/CreationalPatterns/Builder)|
-| :heavy_check_mark:  | [Prototype](/CreationalPatterns/Prototype) |
-| :heavy_check_mark:  | [Singleton](/CreationalPatterns/Singleton/) |
+|                     | Pattern                                                  |
+|---------------------|----------------------------------------------------------|
+| :heavy_check_mark:  | [Factory Method](/CreationalPatterns/FactoryMethod/)     |
+| :heavy_check_mark:  | [Abstract Factory](/CreationalPatterns/AbstractFactory/) |
+| :heavy_check_mark:  | [Builder](/CreationalPatterns/Builder)                   |
+| :heavy_check_mark:  | [Prototype](/CreationalPatterns/Prototype)               |
+| :heavy_check_mark:  | [Singleton](/CreationalPatterns/Singleton/)              |
 
 ## Structural Patterns
 
-| | Pattern | 
-|---|--- | 
-|:heavy_check_mark:| [Adapter](/StructuralPatterns/Adapter) | 
-| | [Bridge](/StructuralPatterns/Bridge) |
-|:heavy_check_mark: | [Composite](/StructuralPatterns/Composite) | 
-|:heavy_check_mark:| [Decorator](/StructuralPatterns/Decorator) | 
-| | [Facade](/StructuralPatterns/Facade) | 
-| | [Flyweight](/StructuralPatterns/Flyweight) |
-| | [Proxy](/StructuralPatterns/Proxy) |
+|                    | Pattern                                    |
+|--------------------|--------------------------------------------|
+| :heavy_check_mark: | [Adapter](/StructuralPatterns/Adapter)     |
+| :heavy_check_mark: | [Bridge](/StructuralPatterns/Bridge)       |
+| :heavy_check_mark: | [Composite](/StructuralPatterns/Composite) |
+| :heavy_check_mark: | [Decorator](/StructuralPatterns/Decorator) |
+|                    | [Facade](/StructuralPatterns/Facade)       |
+|                    | [Flyweight](/StructuralPatterns/Flyweight) |
+|                    | [Proxy](/StructuralPatterns/Proxy)         |
 
 ## Behavioral Patterns
 
-| | Pattern |
-| ---|--- |
-| | [Chain of responsibility](/BehavioralPatterns/ChainOfResponsibility)
-| | [Command](/BehavioralPatterns/Command) |
-| | [Interpreter](/BehavioralPatterns/Interpreter)
-| | [Iterator](/BehavioralPatterns/Iterator)
-|:heavy_check_mark: | [Mediator](/BehavioralPatterns/Mediator)|
-|:heavy_check_mark:| [Memento](/BehavioralPatterns/Memento)|
-| :heavy_check_mark: | [Null Object](/BehavioralPatterns/NullObject) |
-| :heavy_check_mark:| [Observer](/BehavioralPatterns/Observer/) |
-| | [State](/BehavioralPatterns/State)
-|:heavy_check_mark: | [Strategy](/BehavioralPatterns/Strategy/) |
-|:heavy_check_mark: | [Template Method](/BehavioralPatterns/TemplateMethod) |
-| | [Visitor](/BehavioralPatterns/Visitor)
+|                    | Pattern                                                               |
+|--------------------|-----------------------------------------------------------------------|
+|                    | [Chain of responsibility](/BehavioralPatterns/ChainOfResponsibility)  |
+|                    | [Command](/BehavioralPatterns/Command)                                |
+|                    | [Interpreter](/BehavioralPatterns/Interpreter)                        |
+|                    | [Iterator](/BehavioralPatterns/Iterator)                              |
+| :heavy_check_mark: | [Mediator](/BehavioralPatterns/Mediator)                              |
+| :heavy_check_mark: | [Memento](/BehavioralPatterns/Memento)                                |
+| :heavy_check_mark: | [Null Object](/BehavioralPatterns/NullObject)                         |
+| :heavy_check_mark: | [Observer](/BehavioralPatterns/Observer/)                             |
+|                    | [State](/BehavioralPatterns/State)                                    |
+| :heavy_check_mark: | [Strategy](/BehavioralPatterns/Strategy/)                             |
+| :heavy_check_mark: | [Template Method](/BehavioralPatterns/TemplateMethod)                 |
+|                    | [Visitor](/BehavioralPatterns/Visitor)                                |
 
 ### References
 * Design Patterns, Elements of Reusable Object-Oriented Software (GoF)

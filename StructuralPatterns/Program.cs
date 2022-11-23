@@ -8,9 +8,9 @@ namespace StructuralPatterns
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            Adapter.TestAdapter.Run();
+            Bridge.TestBridge.Run();
             Console.ReadKey();
         }
     }

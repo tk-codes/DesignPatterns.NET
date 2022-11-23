@@ -1,16 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace StructuralPatterns.Bridge
+﻿namespace StructuralPatterns.Bridge
 {
+    // Implementor
     public interface IDevice
     {
         void PowerOn();
         void PowerOff();
-        int GetVolumen();
-        void SetVolume();
+        void VolumeUp();
+        void VolumeDown();
     }
 }
