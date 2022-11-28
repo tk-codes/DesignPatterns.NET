@@ -43,7 +43,15 @@ Define a `Facade` object that
 
 ## Example
 
-TODO
+![Facade](../../Diagrams/Facade.png)
+
+**Usage**
+
+```csharp
+        // Client uses facade which hides the interaction with the sub-processes
+        var compiler = new Compiler();
+        compiler.Compile(@"~\hello.cs", @"~\hello.il");
+```
 
 ## Relations with Other Patterns
 

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="StructuralPatterns.Facade.Checker">
+    <Position X="12" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Facade\Checker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StructuralPatterns.Facade.Compiler">
+    <Position X="11" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Facade\Compiler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StructuralPatterns.Facade.Generator">
+    <Position X="14" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Facade\Generator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StructuralPatterns.Facade.Lexer">
+    <Position X="8" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Facade\Lexer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StructuralPatterns.Facade.Parser">
+    <Position X="10" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Facade\Parser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StructuralPatterns.Facade.TestFacade">
+    <Position X="7.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Facade\TestFacade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

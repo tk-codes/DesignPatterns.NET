@@ -4,7 +4,7 @@ Design Patterns in C# / .NET
 [![Build Status](https://travis-ci.org/tk-codes/DesignPatterns.NET.svg?branch=master)](https://travis-ci.org/tk-codes/DesignPatterns.NET)
 ![Language C#](https://img.shields.io/badge/language-c%23-blue.svg)
 ![status in progress](https://img.shields.io/badge/status-in%20progress-brightgreen.svg)
-![number of patterns](https://img.shields.io/badge/patterns-16-red.svg)
+![number of patterns](https://img.shields.io/badge/patterns-17-red.svg)
 
 ## Creational Patterns
 
@@ -24,7 +24,7 @@ Design Patterns in C# / .NET
 | :heavy_check_mark: | [Bridge](/StructuralPatterns/Bridge)       |
 | :heavy_check_mark: | [Composite](/StructuralPatterns/Composite) |
 | :heavy_check_mark: | [Decorator](/StructuralPatterns/Decorator) |
-|                    | [Facade](/StructuralPatterns/Facade)       |
+| :heavy_check_mark: | [Facade](/StructuralPatterns/Facade)       |
 |                    | [Flyweight](/StructuralPatterns/Flyweight) |
 |                    | [Proxy](/StructuralPatterns/Proxy)         |
 

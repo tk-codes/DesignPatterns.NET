@@ -10,7 +10,7 @@ namespace StructuralPatterns
     {
         static void Main()
         {
-            Bridge.TestBridge.Run();
+            Facade.TestFacade.Run();
             Console.ReadKey();
         }
     }
